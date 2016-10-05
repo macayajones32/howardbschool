@@ -1,0 +1,218 @@
+/*----Section Styling ----*/
+.section {
+    padding: 150px;
+}
+
+
+.section.red {
+    background: #e51937;
+    color: #fff;
+}
+
+.section.blue{
+    background: #001E32;
+    color: #fff;
+}
+
+.section.white{
+    color: #003a63;
+}
+
+.section.grey{
+    background: #5f6062;
+    color: white;
+}
+
+.section h1{
+    margin-bottom: 40px;
+}
+
+.section p{
+    font-size: 20px;
+}
+
+.text-red{
+    color: #e51937;
+}
+
+.text-blue{
+    color: #003a63;
+}
+
+.text-white{
+    color: #fff;
+}
+
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: white;
+    color: black;
+    margin: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card .container {
+    padding: 2px 16px;
+}
+
+
+.footer-section{
+    padding: 50px;
+    background: #001E32;
+    color: #fff;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section a{
+    color: aliceblue;
+}
+
+.footer-section .arrow a{
+    margin: -5px;
+}
+
+.footer-section .arrow a:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    padding: 5px;
+}
+
+.footer-section h2{
+    font-size: 25px;
+}
+
+.article-section{
+    padding: 75px;
+    background:  #white;
+    color: #001E32;
+}
+
+.article-section .date{
+    font-size: 14px;
+    font-style: italic;
+    color: #e51937;
+    text-decoration-style: wavy;
+}
+
+.article-section p{
+    margin: 15px 0 20px;
+    color: #404040;
+}
+
+/*****************---Section at the top of each page-------***********/
+.header-section{
+    padding: 200px 200px 110px 50px;
+    text-align: center;
+}
+
+.header-section h1{
+    font-size: 50px;
+}
+
+/*****************---Section inside each page-------***********/
+.page-section{
+    color: #000;
+    padding: 100px 200px 50px 50px;
+}
+
+.page-section p{
+    color: #404040;
+}
+
+/*****************---BUTTONS-------***********/
+.btn{
+    border: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+    
+}
+
+/* Sweep To Right */
+.btn.btn-primary {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+ 
+}
+
+.btn.btn-primary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary.animate:focus, .btn.btn-primary.animate:active {
+  color: white;
+}
+
+.btn.btn-primary:hover:before, .btn.btn-primary.animate:focus:before, .btn.btn-primary.animate:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.box{
+    background: blue;
+    padding: 50px;
+    margin-bottom: 10px;
+}

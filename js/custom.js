@@ -1,0 +1,3 @@
+$(document).ready(function(){'use strict';$(window).scroll(function(){if($(this).scrollTop()>1){$('nav.transparent').addClass("sticky");$('nav.transparent').removeClass("normal");}else{$('nav.transparent').removeClass("sticky");$('nav.transparent').addClass("normal");}});function toggleChevron(e){$(e.target).prev('.panel-heading').find("i.indicator2").toggleClass('fa-plus fa-minus');}
+function toggleChevron1(e){$(e.target).prev('.panel-heading').find("i.indicator").toggleClass('fa-angle-down fa-angle-right');}
+$('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arrow').on('shown.bs.collapse',toggleChevron1);$('.accordion_plusminus').on('hidden.bs.collapse',toggleChevron);$('.accordion_plusminus').on('shown.bs.collapse',toggleChevron);});

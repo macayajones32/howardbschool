@@ -1,0 +1,145 @@
+.side-tabs{
+    font-family: Gentona,"Myriad Pro",sans-serif;
+    top: 10%;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    font-weight: 250;
+    transition-duration: 1s;
+}
+
+.side-tabs .open a{
+    transition: .5s;
+    padding-right: 350px !important;
+}
+
+
+.side-tabs ul{
+    list-style-type: none;
+    
+}
+
+.side-tabs li{
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    border: none;
+    
+}
+
+.side-tabs a {
+    background-color: rgba(0, 58, 99, 0.83);
+    width: 97%;
+    padding: 20px;
+    border-bottom: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    font-size: .8em;
+    line-height: 1.25em;
+    color: rgba(255,255,255,.8);
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    letter-spacing: 3px;
+    -webkit-transition: width,right,background-color,color;
+    -moz-transition: width,right,background-color,color;
+    -o-transition: width,right,background-color,color;
+    transition: width,right,background-color,color;
+    -webkit-transition-duration: 250ms,250ms,250ms,250ms;
+    -moz-transition-duration: 250ms,250ms,250ms,250ms;
+    -o-transition-duration: 250ms,250ms,250ms,250ms;
+    transition-duration: 250ms,250ms,250ms,250ms;
+    -webkit-transition-timing-function: cubic-bezier(.175,.885,.32,1.14),cubic-bezier(.175,.885,.32,1.14),ease-in-out,ease-in-out;
+    -moz-transition-timing-function: cubic-bezier(.175,.885,.32,1.14),cubic-bezier(.175,.885,.32,1.14),ease-in-out,ease-in-out;
+    -o-transition-timing-function: cubic-bezier(.175,.885,.32,1.14),cubic-bezier(.175,.885,.32,1.14),ease-in-out,ease-in-out;
+    transition-timing-function: cubic-bezier(.175,.885,.32,1.14),cubic-bezier(.175,.885,.32,1.14),ease-in-out,ease-in-out;
+}
+
+.side-tabs .main-menu a{
+    margin: 10px;
+    padding: 17px;
+    padding-right: 20px;
+}
+
+.side-tabs .main-menu{
+    padding-left: 5px;
+}
+
+.side-tabs .actions a{
+    margin: 7px;
+    padding: 12px;
+    background-color: #e51937;
+    font-size: .7em;
+    line-height: 1.42857em;
+}
+
+.site-tabs a:hover{
+    width: 150%;
+    right: 10px;
+}
+
+.side-tabs .main-menu a:hover{
+    background-color: #003a63;
+    color: #fff;
+    width: 110%;
+    right: 10px;
+}
+
+.side-tabs .actions a:hover{
+    color: #fff;
+    width: 110%;
+    right: 10px;
+}
+
+
+.responsive-tab{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top:0;
+    right:0;
+    position: fixed;
+    z-index: 10;
+    padding: 15px;
+    font-size: 18px;
+    background-color:rgba(255, 255, 255, 0.7);
+    display: none;
+}
+
+.little-tab{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top:0;
+    right:0;
+    position: fixed;
+    z-index: 10;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgba(0, 58, 99, 0.83);
+    display: none;
+}
+
+.little-tab a{
+    color: rgba(255,255,255,.8);
+}
+
+.little-tab a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 1200px){
+    .side-tabs{
+        transition: .1;
+        right: -400px;
+    }
+    
+    .responsive-tab{
+        display: block;
+    }
+}
