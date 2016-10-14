@@ -14,6 +14,8 @@
     color: #fff;
 }
 
+
+
 .section.white{
     color: #003a63;
 }
@@ -23,13 +25,29 @@
     color: white;
 }
 
-.section h1{
+#lead{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#lead:before, #lead:after {
+  font-family: "Some cool font with glyphs", serif;
+  content: "\";  /* Some fancy character */
+  color: #c83f3f;
+}
+
+.section  h1{
     margin-bottom: 40px;
 }
 
+
+
 .section p{
     font-size: 20px;
+    font-weight: 100px;
 }
+
+
 
 .text-red{
     color: #e51937;
@@ -87,6 +105,87 @@
     padding: 2px 16px;
 }
 
+.hu-grid .box{
+    width: 33.333%;
+    margin: 0;
+    float:left;
+    transition: 0.3s;
+    position: relative;
+    height: 300px;
+    background: #001E32;
+    overflow: hidden;
+}
+
+.hu-grid .box .container{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    background: rgba(0, 58, 99, 0.2);
+    bottom: 0px;
+}
+
+.hu-grid{
+    margin-top:100px;
+    margin-bottom: 800px;
+}
+
+.hu-grid .box img{
+    width: 100%;
+    margin: auto;
+}
+
+.hu-grid .box:hover:{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.hu-grid .blue .container{
+    background:  background: rgba(0, 58, 99, 0.83);
+}
+
+.hu-grid .container:hover{
+    background: rgba(0, 58, 99, 0.9);
+}
+
+.hu-grid .container:hover p{
+    display: block;
+}
+
+.hu-grid .container:hover h3{
+    background: #fff;
+    color: #001E32;
+}
+
+.hu-grid .container h3{
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    color: white;
+    background: #001E32;
+    padding: 10px;
+}
+
+.hu-grid .container p{
+    padding: 10px;
+    color: white;
+    font-weight: 200;
+    display: none;
+    letter-spacing: 1.5px;
+}
+
+
+
+@media (max-width: 1000px){
+    .hu-grid .box{
+        width:50%;
+    }
+}
+
+@media (max-width: 600px){
+    .hu-grid .box{
+        width:100%;
+    }
+}
 
 .footer-section{
     padding: 50px;
@@ -134,6 +233,16 @@
     color: #404040;
 }
 
+
+@media (max-width: 1000px){
+    .section, .article-section {
+        padding: 10px;
+    }
+    
+    .section h1{
+        font-size: 30px;
+    }
+}
 /*****************---Section at the top of each page-------***********/
 .header-section{
     padding: 200px 200px 110px 50px;
@@ -177,6 +286,7 @@
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  background:  #001E32;
  
 }
 
@@ -188,7 +298,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: black;
+  background: #e51937;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -211,8 +321,49 @@
 }
 
 
-.box{
-    background: blue;
+/*********card********/
+.card{
     padding: 50px;
-    margin-bottom: 10px;
+    opacity: .95;
+    color: #000;
 }
+
+
+
+.card h1{
+    font-size:40px;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+/*********quote********/
+.quote img{
+    border-radius: 50%;
+     border:4px solid #fff;
+    margin: auto;
+}
+
+.quote h3{
+    text-align: center;
+}
+
+.quote p{
+    font-size: 25px;
+    font-style: italic;
+    line-height: 35px;
+}
+
+.quote p:before{
+    font-family: FontAwesome;
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #fff;
+}
+    
