@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,800';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 /*----Section Styling ----*/
 .section {
     padding: 150px;
@@ -25,9 +28,10 @@
     color: white;
 }
 
-#lead{
+.lead {
     font-size: 60px;
     font-weight: 400;
+    font-family: 'Playfair Display', serif;
 }
 
 #lead:before, #lead:after {
@@ -38,6 +42,7 @@
 
 .section  h1{
     margin-bottom: 40px;
+    font-weight: 200px;
 }
 
 
@@ -91,7 +96,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: white;
-    color: black;
+    color: #003a63;
     margin: 15px;
 }
 
@@ -105,6 +110,7 @@
     padding: 2px 16px;
 }
 
+/*********Styling for our grid box ********/
 .hu-grid .box{
     width: 33.333%;
     margin: 0;
@@ -121,8 +127,8 @@
     height: 100%;
     padding: 20px;
     position: absolute;
-    background: rgba(0, 58, 99, 0.2);
     bottom: 0px;
+    text-align: center;
 }
 
 .hu-grid{
@@ -144,25 +150,30 @@
 }
 
 .hu-grid .container:hover{
-    background: rgba(0, 58, 99, 0.9);
+    background: rgba(0, 58, 99, 0.5);
 }
 
 .hu-grid .container:hover p{
-    display: block;
+    
 }
 
 .hu-grid .container:hover h3{
     background: #fff;
     color: #001E32;
+    display: block;
+    text-align: center;
 }
 
 .hu-grid .container h3{
     position: absolute;
-    bottom: 10px;
-    text-align: left;
+    bottom: 30%;
+    text-align: center;
     color: white;
     background: #001E32;
     padding: 10px;
+    display: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 .hu-grid .container p{
@@ -186,6 +197,8 @@
         width:100%;
     }
 }
+
+/*****footer ********/
 
 .footer-section{
     padding: 50px;
@@ -256,7 +269,7 @@
 /*****************---Section inside each page-------***********/
 .page-section{
     color: #000;
-    padding: 100px 200px 50px 50px;
+    padding: 50px 200px 50px 50px;
 }
 
 .page-section p{
@@ -266,9 +279,8 @@
 /*****************---BUTTONS-------***********/
 .btn{
     border: 0;
-    letter-spacing: 2px;
-    font-weight: normal;
-    
+    letter-spacing: 3px;
+    font-weight: 200;
 }
 
 /* Sweep To Right */
@@ -325,7 +337,7 @@
 .card{
     padding: 50px;
     opacity: .95;
-    color: #000;
+    color: #003a63;
 }
 
 
@@ -335,7 +347,7 @@
     margin-bottom: 20px;
 }
 .card p{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 25px;
     
 }
@@ -367,3 +379,88 @@
     color: #fff;
 }
     
+
+ /*wheelDiv Insert generated CSS code from here -> http://pmg.softwaretailoring.net */
+#piemenu > svg { width: 100%; height: 100%; }
+#piemenu { height: 400px; width: 400px; margin:auto; }
+@media (max-width: 400px) { #piemenu { height: 300px; width: 300px; } }
+[class|=wheelnav-piemenu] {
+    stroke: none;
+    stroke-width: 2px;
+    cursor: pointer;
+    font-family: FontAwesome;
+}
+
+[class|=wheelnav-piemenu-slice-basic] { fill: #2a6ebb; stroke-width=3; }
+[class|=wheelnav-piemenu-slice-selected] { fill: #fff; stroke: "white"; }
+[class|=wheelnav-piemenu-slice-hover] { fill: #fff; color: #003a63; }
+
+[class|=wheelnav-piemenu-title-basic] { fill: #fff; stroke: "white"; }
+[class|=wheelnav-piemenu-title-selected] { fill: #003a63; stroke: none; }
+[class|=wheelnav-piemenu-title-hover] { fill: #003a63; stroke: none; cursor: pointer; }
+[class|=wheelnav-piemenu-title] > tspan { font-family: Impact, Charcoal, sans-serif; font-size: 24px; }
+
+.wheelnav-piemenu-marker { stroke: #fff; stroke-width: 5; }
+
+.major {
+    display: none;
+}
+.major.active{
+    display: block;
+}
+
+/********_-----_____regular page stuff ********/
+.page-section h1{
+    font-size: 34px;
+    font-weight: 300px;
+    padding: 0px 0 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-section {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.page-section .intro {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.page-section .header{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 25px 0 10px;
+}
+
+.main-logo{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    padding: 20px 0px 20px 20px;
+}
+
+  
+.bs-header{
+    color: #fff;
+    padding: 270px 0px 40px;
+    background-color: #000;
+    background-image: url(../images/ny.jpg);  
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.bs-header .bs-header-overlay {
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    background-image: url(../images/grid.png);
+    z-index: 100;
+}

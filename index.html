@@ -10,174 +10,16 @@
     <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="css/side-nav.css" rel="stylesheet" type="text/css">
     <link href="css/sections.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/wheelnav.min.js"></script>
+    <script type="text/javascript" src="js/raphael.min.js"></script>
+
 </head>
 <body>
-    <div class="" id="cover"></div>
-    <div class="sidenav" id="mySidenav">
-        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-        <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingOne" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseOne" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button">About Us</a></h4>
-                </div>
-                <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Message from the Dean</a>
-                            </li>
-                            <li>
-                                <a href="#">History</a>
-                            </li>
-                            <li>
-                                <a href="#">Board of Visitors</a>
-                            </li>
-                            <li>
-                                <a href="#">Noteable Alumni</a>
-                            </li>
-                            <li>
-                                <a href="#">News</a>
-                            </li>
-                            <li>
-                                <a href="#">Calendar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingTwo" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role=
-                    "button">Academics</a></h4>
-                </div>
-                <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Undergraduate</a>
-                            </li>
-                            <li>
-                                <a href="#">MBA</a>
-                            </li>
-                            <li>
-                                <a href="#">Masters' Programs</a>
-                            </li>
-                            <li>
-                                <a href="#">EMBA</a>
-                            </li>
-                            <li>
-                                <a href="#">Executive Education</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingThree" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role=
-                    "button">Departments</a></h4>
-                </div>
-                <div aria-labelledby="headingThree" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Accounting</a>
-                            </li>
-                            <li>
-                                <a href="#">Finance & International Business</a>
-                            </li>
-                            <li>
-                                <a href="#">Information Systems & Supply Chain Management</a>
-                            </li>
-                            <li>
-                                <a href="#">Management</a>
-                            </li>
-                            <li>
-                                <a href="#">Marketing</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingFour" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseFour" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role=
-                    "button">Special Programs</a></h4>
-                </div>
-                <div aria-labelledby="headingFour" class="panel-collapse collapse" id="collapseFour" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">21st Century Advantage Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Excecutive Leadership Honors Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Summer Programs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingFive" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseFive" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive" role=
-                    "button">Faculty & Research</a></h4>
-                </div>
-                <div aria-labelledby="headingFive" class="panel-collapse collapse" id="collapseFive" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Faculty Directory</a>
-                            </li>
-                            <li>
-                                <a href="#">Bottom Line</a>
-                            </li>
-                            <li>
-                                <a href="#">Centers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    <div w3-include-html="partials/mainSideNav.html"></div> 
     <div id="main">
-        <div class="responsive-tab">
-            <a class="hamburger" href="#menu" onclick="openNav()" role="button" title="Open Menu"><i aria-label="Open Menu" class="fa fa-fw fa-bars"></i><span class="icon-fallback">Menu</span></a>
-        </div>
-        <div class="little-tab">
-            <a class="hamburger" href="#menu" onclick="openNav()" role="button" title="Open Menu"><i aria-label="Open Menu" class="fa fa-fw fa-bars"></i><span class="icon-fallback">Menu</span></a>
-        </div>
-        <div class="side-tabs">
-            <ul aria-describedby="aria-description-tablist" class="main-menu" id="menu" role="tablist">
-                <li style="list-style: none; display: inline">
-                    <p class="hide" id="aria-description-tablist">Tabs in this tab group open the tab panel widget in a dialog. Once a tab is interacted with, press the escape key to exit the dialog
-                    and return to the page content.</p>
-                </li>
-                <li class="tab" onclick="openNav()" role="presentation">
-                    <a aria-controls="tabpanel-menu" href="#menu" id="tab-menu" role="tab"><i aria-hidden="true" class="fa fa-fw fa-bars" onclick="openNav()"></i>Menu</a>
-                </li>
-                <li class="tab" role="presentation">
-                    <a aria-controls="tabpanel-search" href="#search" id="tab-search" role="tab"><i aria-hidden="true" class="fa fa-fw fa-search"></i>Search</a>
-                </li>
-                <li class="tab" role="presentation">
-                    <a aria-controls="tabpanel-news-events" href="#" id="tab-news-events" role="tab"><i aria-hidden="true" class="fa fa-fw fa-calendar"></i>News &amp; Events</a>
-                </li>
-            </ul>
-            <ul class="actions">
-                <li class="parent-level">
-                    <a class="destination" href="#" title="Apply">Apply</a>
-                </li>
-                <li class="parent-level">
-                    <a class="destination" href="#" title="Visit">Visit</a>
-                </li>
-                <li class="parent-level">
-                    <a class="destination" href="#" title="See programs">Donate</a>
-                </li>
-            </ul><!-- </div> -->
-        </div>
+        <div w3-include-html="partials/mainMenu.html"></div> 
+        
         <div class="hero-section">
             <div class="no-hero-vid"></div>
             <div class="hero-media">
@@ -194,22 +36,22 @@
                 <a href="#home"><img alt="See more" src="assets/arrow-down.svg"></a>
             </div>
         </div>
-        <div class="section white">
-            <div class="container-fluid">
-                <h1 id="lead" class="text-center">Transforming the face of leadership</h1>
-                <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970. With dynamic academic departments,
-                esteemed faculty, and over 8,000 alumni across the globe, we continue to be ranked among the top business programs in
-                the nation.</p>
-            </div>
-        </div>
 
+              <div class="section white">
+            
+                    
+                <h1  class="lead text-center">The Howard Advantage</h1>
+                <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+            <br>
+            <div class="col-md-6 col-md-offset-3"><hr></div>
+            
             <div class="hu-grid">
                     <div class="box blue">
                         <img src="images/backgrounds/2.jpg">
                         <a href="#">
                             <div class="container">
                                 <h3>Center for Career Excellence</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </a>
                     </div>
@@ -218,7 +60,6 @@
                         <a href="#">
                             <div class="container">
                                 <h3>21st Century Advantage Program</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </div>
                         </a>
                     </div>
@@ -227,25 +68,22 @@
                         <a href="#">
                             <div class="container">
                                 <h3>Executive Leadership honors program</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </div>
                         </a>
                     </div>
                     <div class="box red">
-                        <img src="images/firm.jpg">
+                        <img src="images/backgrounds/6.jpg">
                         <a href="#">
                             <div class="container">
                                 <h3>Global Trilateral MBA</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </div>
                         </a>
                     </div>
                     <div class="box blue">
-                        <img src="images/slider1.jpg">
+                        <img src="images/backgrounds/5.jpg">
                         <a href="#">
                             <div class="container">
                                 <h3>Executive Speaker Series</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </div>
                         </a>
                     </div>
@@ -254,30 +92,143 @@
                         <a href="#">
                             <div class="container">
                                 <h3>International Exposure</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </div>
                         </a>
                     </div>
 
                </div>
-
+        </div>    
         
         <div class="section blue">
+                <div class="container-fluid">
+   
+                <div id='piemenu' data-wheelnav
+                     data-wheelnav-slicepath='DonutSlice'
+                     data-wheelnav-marker data-wheelnav-markerpath='PieLineMarker'
+                     data-wheelnav-rotateoff
+                     data-wheelnav-navangle='270'
+                     data-wheelnav-titleheight='30'
+                     data-wheelnav-cssmode 
+                     data-wheelnav-init>
+                  <div data-wheelnav-navitemimg='images/icons/is.png' onmouseup="show(is)"></div>
+                  <div data-wheelnav-navitemimg='images/icons/insurance.png' onmouseup="show(insurance)"></div>
+                  <div data-wheelnav-navitemimg='images/icons/intbus.png' onmouseup="show(ib)" ></div>
+                  <div data-wheelnav-navitemimg='images/icons/hospitality.png'onmouseup="show(hospitality)" ></div>
+                  <div data-wheelnav-navitemimg='images/icons/finance.png' onmouseup="show(finance)"></div>
+                  <div data-wheelnav-navitemimg='images/icons/management.png' onmouseup="show(management)"></div>
+                  <div data-wheelnav-navitemimg='images/icons/marketing.png' onmouseup="show(marketing)"></div>
+                  <div data-wheelnav-navitemimg='images/icons/scm.png' onmouseup="show(scm)"></div>
+                </div>
+                
+                <div class="majors center" >
+                    <div id="is" class="major active">
+                        <h1>Computer Information Systems</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>    
+                    <div id="ib" class="major">
+                        <h1>International business</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>    
+                    <div id="accounting" class="major">
+                        <h1>Accounting</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="insurance" class="major">
+                        <h1>Risk Management &amp; Insurance</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="hospitality" class="major">
+                        <h1>Hospitality Management</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="finance" class="major">
+                        <h1>Finance</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="management" class="major">
+                        <h1>Management</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="marketing" class="major">
+                        <h1>Marketing</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                    <div id="scm" class="major">
+                        <h1>Supply Chain Management </h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
+                    </div>       
+                </div>
+                    
+                
+                    
+            </div>
+        </div>
+        
+        <div class="section white">
             <div class="container-fluid">
                 <h1 class="text-center"> A quote by Dean Harvey!</h1><br><br>
                 <div class="row quote">
-                    <div class="col-md-4 ">
+                    <div class="col-md-3 ">
                         <img src="images/harvey.jpg" class="img-responsive">
-                        <h3>Barron Harvey Ph.D. <br> School of Business Dean</h3>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <p>Students and faculty choose the Howard University School of Business because it provides in-depth classroom instruction, real-world experience, expert speakers from a range of
                     backgrounds, access to global industry leaders and a commitment to research and publication.</p>
+                        <p class="right"><i>Barron Harvey Ph.D. <br> School of Business Dean</i></p>
                     </div>
                 </div>
             </div>
         </div>
         
+        
+        <section class="section blue">
+            <div class="container-fluid">
+                <div class="col-md-12 col-sm-6">
+                            <h3>Upcoming Events</h3>
+                            <ul class="events-list events-list-compact">
+                                <li>
+                                    <div class="event-date">
+                                        <div class="event-month">Jun</div>
+                                        <div class="event-day">11</div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
+                                    <a href="#"><strong>International Immigration Seminar</strong></a>
+                                    <span class="meta-data">Saturday, 10:00 AM</span>
+                                </li>
+                                <li>
+                                    <div class="event-date">
+                                        <div class="event-month">Jun</div>
+                                        <div class="event-day">18</div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
+                                    <a href="#"><strong>Cyber Crime Seminar</strong></a>
+                                    <span class="meta-data">Saturday, 12:00 PM</span>
+                                </li>
+                                <li>
+                                    <div class="event-date">
+                                        <div class="event-month">Jul</div>
+                                        <div class="event-day">01</div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
+                                    <a href="#"><strong>Financial Investigations and Enforcement Trends Seminar</strong></a>
+                                    <span class="meta-data">Friday, 01:00 PM</span>
+                                </li>
+                                <li>
+                                    <div class="event-date">
+                                        <div class="event-month">Jul</div>
+                                        <div class="event-day">01</div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
+                                    <a href="#"><strong>An Introduction to Angel Investing</strong></a>
+                                    <span class="meta-data">Friday, 04:00 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </section>
+
+        
+
         <div class="section parallax" style="background-image: linear-gradient(
                   rgba(0, 0, 0, 0.2), 
                   rgba(0, 0, 0, 0.2)
@@ -292,6 +243,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="section red">
             <div class="container-fluid">
                 <h1>The Howard University School of business is an awesome school</h1>
@@ -300,8 +252,30 @@
                 the nation.</p>
                 <p>Students and faculty choose the Howard University School of Business because it provides in-depth classroom instruction, real-world experience, expert speakers from a range of
                 backgrounds, access to global industry leaders and a commitment to research and publication.</p>
+                <br><hr><br>
+                    
+                <h1 id="lead" class="text-center">The Howard Advantage</h1>
+                <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970. With dynamic academic departments,
+                esteemed faculty, and over 8,000 alumni across the globe, we continue to be ranked among the top business programs in
+                the nation.</p>
             </div>
         </div>
+        
+                <!----div class="section parallax" style="background-image: linear-gradient(
+                  rgba(255, 255, 255, 0.8), 
+                  rgba(255, 255, 255, 0.8)
+                ), url(images/hu.png);">
+            <div class="container-fluid">
+                <div class="col-md-12">
+                    <div class="card">
+                        <h1 class="lead text-center">Transforming the face of leadership</h1>
+                        <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970. With dynamic academic departments,
+                        esteemed faculty, and over 8,000 alumni across the globe, we continue to be ranked among the top business programs in
+                        the nation.</p>
+                    </div>
+                </div>
+            </div>
+        </div---->
 
         
         <div class="article-section grey">
@@ -347,202 +321,21 @@
             </div>
         </div>
         
-        
-    <footer class="footer-section" id="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div>
-                        <h2>Programs</h2>
-                        <ul class="arrow">
-                            <li>
-                                <a href="/undergraduate/programs/">Undergraduate Programs</a>
-                            </li>
-                            <li>
-                                <a href="/mba">MBA Program</a>
-                            </li>
-                            <li>
-                                <a href="/emba">Executive MBA</a>
-                            </li>
-                            <li>
-                                <a href="/undergraduate/programs/special_programs.html">Special Programs</a>
-                            </li>
-                            <li>
-                                <a href="/undergraduate/programs/special_summer.html">Summer Programs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div>
-                    <h2>Faculty & Research</h2>
-                    <ul class="arrow">
-                        <li>
-                            <a href="/undergraduate/departments/">Academic Departments</a>
-                        </li>
-                        <li>
-                            <a href="/go/centers/">Centers</a>
-                        </li>
-                        <li>
-                            <a href="/go/faculty/directory.html">Faculty Directory</a>
-                        </li>
-                        <li>
-                            <a href="/go/info/research.html">Research & Insights</a>
-                        </li>
-                    </ul><br>
-                    <br>
-                    <img alt="" class="responsive" src="http://res.cloudinary.com/bisonshare/image/upload/v1442773860/AACSB_seal_final_blue_vnsppt.png" width="100"></div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div>
-                        <h2>Info for</h2>
-                        <ul class="arrow">
-                            <li>
-                                <a href="/go/centers/https://www.huccenet.com">Recruiters</a>
-                            </li>
-                            <li>
-                                <a href="http://www.howard.edu/advancement/give/">Alumni</a>
-                            </li>
-                            <li>
-                                <a href="/undergraduate/programs/">Current Students</a>
-                            </li>
-                            <li>
-                                <a href="/go/faculty/directory.html">Faculty &amp; Staff</a>
-                            </li>
-                            <li>
-                                <a href="http://www2.howard.edu/admission">Prospective Students</a>
-                            </li>
-                            <li>
-                                <a href="http://www2.howard.edu/contact/visit">Parents</a>
-                            </li>
-                            <li>
-                                <a href="http://www2.howard.edu/news-and-events">Media</a>
-                            </li>
-                            <li>
-                                <a href="/go/info/donors.html">Donors</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h2>Contact us</h2>
-                        <address>
-                            <p>2600 6th St NW<br>
-                            Washington, DC 20059<br>
-                            202-806-1500<br>
-                            <a href="mailto:BusinessDean@howard.edu">BusinessDean@howard.edu</a></p>
-                        </address>
-                        <ul class="social-icons light-color squared social-hover">
-                            <li>
-                                <a class="facebook" href="https://www.facebook.com/HowardHUSB?ref=hl" target="_blank" title="facebook"><i class="icon-glyph-320"></i></a>
-                            </li>
-                            <li>
-                                <a class="twitter" href="%20https://twitter.com/howardhusb" target="_blank" title="twitter"><i class="icon-glyph-339"></i></a>
-                            </li>
-                            <li>
-                                <a class="gplus" href="https://www.linkedin.com/edu/school?id=162185&trk=edu-up-nav-menu-home" target="_blank" title="gplus"><i class="icon-glyph-308"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 hidden-sm text-center">
-                    <div class="footer-widget"><img alt="Howard School of Business Logo" class="img-responsive" src=
-                    "http://res.cloudinary.com/howard-bschool/image/upload/v1443929121/bschool-logo_f3o1kf.png"></div>
-                </div>
-            </div>
-        </div>
-    </footer><!-- / footer -->
+    <div w3-include-html="partials/footer.html"></div>    
+    
  
-    <script class="jqst" src="http://bitbenderz.com/jqst.jsp?v=4.0.3&key=QEDA-EHFI-CGDF-FCAH&q=^DJI,^IXIC,^NYA,^GSPC,^GSPTSE&f=name,price,change&theme=vader"></script>
-</div>
-        
-    <script type="text/rocketscript">
-            window.__lc = window.__lc || {}, window.__lc.license = 7345031,
-            
-            function() 
-            {
-                var t = document.createElement("script");
-                t.type = "text/javascript", t.async = !0, t.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.livechatinc.com/tracking.js";
-                var c = document.getElementsByTagName("script")[0];
-                c.parentNode.insertBefore(t, c)
-            }()
-    </script> 
+</div><!-- / main -->
+
     <script src="js/jquery.min.js">
     </script> 
     <script src="js/bootstrap.min.js">
     </script> 
     <script src="js/jquery.scrollTo.js">
     </script> 
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="js/custom.js">
     </script> 
-    <script>
-            $(document).ready(function()
-            {
-                $('.smoothscroll').onePageNav(
-                {
-                    filter: ':not(.external)',
-                    begin: function()
-                    {
-                        console.log('start')
-                    },
-                    end: function() 
-                    {
-                        console.log('stop')
-                    }
-                });         
-            });
-    </script> 
-    <script>
-        // is the navigation panel open?
-        var status = 0;
-                /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-        function openNav() {
-            status = 1;
-            $('.side-tabs').css({
-                    'display': 'block'
-                });
-            document.getElementById("mySidenav").style.width = "350px";
-            document.getElementById("main").style.marginRight = "350px";
-            document.getElementById("menu").classList.add("open");
-            document.getElementById("cover").classList.add("overlay");
-        }
+    
 
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-        function closeNav() {
-            status = 0;
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-            document.getElementById("menu").classList.remove("open");
-            document.getElementById("cover").classList.remove("overlay");
-            if ($(this).scrollTop() > 300) { //use `this`, not `document`
-                $('.side-tabs').css({
-                    'display': 'none'
-                });
-                $('.little-tab').css({
-                    'display': 'block'
-                });
-            }
-        }
-        
-        
-        $(window).scroll(function() {
-            if (($(this).scrollTop() > 300) && (status == 0)) { //use `this`, not `document`
-                $('.side-tabs').css({
-                    'display': 'none'
-                });
-                $('.little-tab').css({
-                    'display': 'block'
-                });
-            } else {
-                $('.side-tabs').css({
-                    'display': 'block'
-                });
-                $('.little-tab').css({
-                    'display': 'none'
-                });
-            }
-        });
-    </script>
 </body>
 </html>

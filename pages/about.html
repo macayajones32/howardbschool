@@ -13,194 +13,86 @@
 </head>
 <body>
     <div class="" id="cover"></div>
-    <div class="sidenav" id="mySidenav">
-        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-        <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingOne" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseOne" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button">About Us</a></h4>
-                </div>
-                <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Message from the Dean</a>
-                            </li>
-                            <li>
-                                <a href="#">History</a>
-                            </li>
-                            <li>
-                                <a href="#">Noteable Alumni</a>
-                            </li>
-                            <li>
-                                <a href="#">News</a>
-                            </li>
-                            <li>
-                                <a href="#">Calendar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingTwo" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role=
-                    "button">Academics</a></h4>
-                </div>
-                <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Undergraduate</a>
-                            </li>
-                            <li>
-                                <a href="#">MBA</a>
-                            </li>
-                            <li>
-                                <a href="#">Masters' Programs</a>
-                            </li>
-                            <li>
-                                <a href="#">EMBA</a>
-                            </li>
-                            <li>
-                                <a href="#">Executive Education</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingThree" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role=
-                    "button">Departments</a></h4>
-                </div>
-                <div aria-labelledby="headingThree" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Accounting</a>
-                            </li>
-                            <li>
-                                <a href="#">Finance & International Business</a>
-                            </li>
-                            <li>
-                                <a href="#">Information Systems & Supply Chain Management</a>
-                            </li>
-                            <li>
-                                <a href="#">Management</a>
-                            </li>
-                            <li>
-                                <a href="#">Marketing</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingFour" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseFour" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role=
-                    "button">Special Programs</a></h4>
-                </div>
-                <div aria-labelledby="headingFour" class="panel-collapse collapse" id="collapseFour" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">21st Century Advantage Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Excecutive Leadership Honors Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Summer Programs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" id="headingFive" role="tab">
-                    <h4 class="panel-title"><a aria-controls="collapseFive" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive" role=
-                    "button">Faculty & Research</a></h4>
-                </div>
-                <div aria-labelledby="headingFive" class="panel-collapse collapse" id="collapseFive" role="tabpanel">
-                    <div class="panel-body">
-                        <ul>
-                            <li>
-                                <a href="#">Faculty Directory</a>
-                            </li>
-                            <li>
-                                <a href="#">Bottom Line</a>
-                            </li>
-                            <li>
-                                <a href="#">Centers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div w3-include-html="../partials/mainSideNav.html"></div> 
     <div id="main">
-        <div class="little-tab">
-            <a class="hamburger" href="#menu" onclick="openNav()" role="button" title="Open Menu"><i aria-label="Open Menu" class="fa fa-fw fa-bars"></i><span class="icon-fallback">Menu</span></a>
-        </div>
-        <div class="side-tabs">
-            <ul aria-describedby="aria-description-tablist" class="main-menu" id="menu" role="tablist">
-                <li style="list-style: none; display: inline">
-                    <p class="hide" id="aria-description-tablist">Tabs in this tab group open the tab panel widget in a dialog. Once a tab is interacted with, press the escape key to exit the dialog
-                    and return to the page content.</p>
-                </li>
-                <li class="tab" onclick="openNav()" role="presentation">
-                    <a aria-controls="tabpanel-menu" href="#menu" id="tab-menu" role="tab"><i aria-hidden="true" class="fa fa-fw fa-bars" onclick="openNav()"></i>Menu</a>
-                </li>
-                <li class="tab" role="presentation">
-                    <a aria-controls="tabpanel-search" href="#search" id="tab-search" role="tab"><i aria-hidden="true" class="fa fa-fw fa-search"></i>Search</a>
-                </li>
-                <li class="tab" role="presentation">
-                    <a aria-controls="tabpanel-news-events" href="http://www.hub.jhu.edu" id="tab-news-events" role="tab"><i aria-hidden="true" class="fa fa-fw fa-calendar"></i>News &amp; Events</a>
-                </li>
-            </ul>
-            <ul class="actions">
-                <li class="parent-level">
-                    <a class="destination" href="#" title="Apply">Apply</a>
-                </li>
-                <li class="parent-level">
-                    <a class="destination" href="#" title="Visit">Visit</a>
-                </li>
-                <li class="parent-level">
-                    <a class="destination" href="#" title="See programs">Donate</a>
-                </li>
-            </ul><!-- </div> -->
-        </div>
+        <div w3-include-html="../partials/mainMenu.html"></div> 
+    
+    <img src="../images/howard_logo.png" class="main-logo">
+        
+    <div class="bs-header" id="content">
+      <div class="bs-header-overlay"></div>
+      <div class="container">
+        <h1>Getting started</h1>
+        <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
+      </div>
     </div>
-    <div class="header-section parallax " style="background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.8), 
-                  rgba(0, 0, 0, 0.8)
-                ), url(../images/slider1.jpg);">
-            <div class="container-fluid">
-                <h1>About the School of Business</h1>
-            </div>
-        </div>
+  
     <div class="page-section white">
+        
+        
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-                        <li role="presentation" class="active"><a href="#">Home</a></li>
-                          <li role="presentation"><a href="#">Profile</a></li>
-                          <li role="presentation"><a href="#">Messages</a></li>
-                    </ul>
+                <div class="col-md-3">
+                    
+            <nav class="bs-docs-sidebar" >
+                <ul class="nav nav-stacked fixed barred" >
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#">Message from the Dean</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Board of Visitors</a></li>
+                            <li><a href="#">Noteable Alumni</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Calendar/a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>          
+            </nav>
+        </div> <!--- end colmd3 ---->
+                
+                <div class="col-md-6">
+                    <h1>From the Dean of Admissions</h1>
+                    <p class="intro">Thank you for your interest in the Master of Business Administration Program at Stanford Graduate School of Business.</p>
+                    <p>We recognize that the task of applying to business school may seem quite daunting. Before you begin the application process, we would like to offer you some advice, as well as some encouragement.</p>
+                    <p class="header">First comes the advice:</p>
+                    <p>Our website is designed to answer questions and to help you make your application an effective one. It contains Stanford GSB practices, expectations and assumptions guiding the evaluation of applicants. Please read it thoroughly. Time spent understanding these will support your efforts to submit your best work.</p>
+                    <p class="header">Now for the encouragement:</p>
+                    <p>We urge you to complete the Stanford application in a genuine manner. Too often applicants assume that the Committee on Admissions holds a rather narrow view of what constitutes an acceptable candidate, and then shape their applications accordingly.</p>
+                    <p>One of the distinguishing characteristics of Stanford’s selection process, however, is our belief that the demands and aims of the MBA Program can be met best through a broad range of backgrounds and aspirations.</p>
+                    <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
+                    <p>Approach the application process as a chance for structured reflection — a rare opportunity to explore your values, spark your enthusiasm, and envision your potential. If you do so, you will have the foundation for a strong application.</p>
+                    <p>If you share our enthusiasm for the possibilities that await you at Stanford, we look forward to hearing from you.</p>
+                    
                 </div>
-                <div class="col-md-8">
-                    <h3>Title of the page</h3>
-                    <p>The Howard University School of Business has been a model for higher education since its founding in 1970. With dynamic academic departments, ground breaking centers of excellence,
-                    esteemed faculty, award winning programs, and over 8,000 alumni across the globe, the Howard University School of Business continues to be ranked among the top business programs in
-                    the nation.</p>
+                
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                      <!-- Default panel contents -->
+                      <div class="panel-heading">Panel heading</div>
+                      <div class="panel-body">
+                        <p>...</p>
+                      </div>
+
+                      <!-- List group -->
+                      <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
     
+    <div w3-include-html="../partials/footer.html"></div>    
     
     <script src="../js/jquery.min.js">
     </script> 
@@ -208,58 +100,11 @@
     </script> 
     <script src="../js/jquery.scrollTo.js">
     </script> 
-    <script src="../js/custom.js">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../js/custom.js">//make sure this script always comes last
     </script>
-    <script>
-        // is the navigation panel open?
-        var status = 0;
-                /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-        function openNav() {
-            status = 1;
-            $('.side-tabs').css({
-                    'display': 'block'
-                });
-            document.getElementById("mySidenav").style.width = "350px";
-            document.getElementById("main").style.marginRight = "350px";
-            document.getElementById("menu").classList.add("open");
-            document.getElementById("cover").classList.add("overlay");
-        }
 
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-        function closeNav() {
-            status = 0;
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-            document.getElementById("menu").classList.remove("open");
-            document.getElementById("cover").classList.remove("overlay");
-            if ($(this).scrollTop() > 300) { //use `this`, not `document`
-                $('.side-tabs').css({
-                    'display': 'none'
-                });
-                $('.little-tab').css({
-                    'display': 'block'
-                });
-            }
-        }
-        
-        
-        $(window).scroll(function() {
-            if (($(this).scrollTop() > 200) && (status == 0)) { //use `this`, not `document`
-                $('.side-tabs').css({
-                    'display': 'none'
-                });
-                $('.little-tab').css({
-                    'display': 'block'
-                });
-            } else {
-                $('.side-tabs').css({
-                    'display': 'block'
-                });
-                $('.little-tab').css({
-                    'display': 'none'
-                });
-            }
-        });
-    </script>
+    
+
 </body>
 </html>

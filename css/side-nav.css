@@ -1,11 +1,11 @@
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    right: -400px; /* menu hidden right - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 100; /* Stay on top */
     top: 0;
-    right: 0;
+    width: 350px;
     background-color: #001E32; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 50px;/* Place content 60px from the top */
