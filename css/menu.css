@@ -106,8 +106,17 @@
     z-index: 10;
     padding: 15px;
     font-size: 18px;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 58, 99, 0.83);  
     display: none;
+}
+
+.responsive-tab a{
+    color: rgba(255,255,255,.8);
+}
+
+
+.responsive-tab a:hover{
+    text-decoration: none;
 }
 
 .little-tab{
@@ -312,4 +321,138 @@ ul.nav.sub-nav a{
 .bs-docs-sidebar .nav .nav>.active:hover>a,
 .bs-docs-sidebar .nav .nav>.active:focus>a {
     font-weight: 500;
+}
+
+/*****side nav ******/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    right: -400px; /* menu hidden right - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 0;
+    width: 350px;
+    background-color: #001E32; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px;/* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .panel-group{
+    margin: 30px;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #f2f2f2;
+    transition: 0.15s;
+}
+
+
+.sidenav .closebtn:hover {
+    color: white;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#accordion {
+    font-family: ‘Open Sans’, ‘Gill Sans’, Calibri, Arial, sans-serif;
+}
+
+/* accordion styling */
+#accordion .panel-heading { padding: 0;}
+
+#accordion .panel-title > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #001E32;
+	display: block;
+	padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    border-style: solid;
+    border-color:  #003d66;
+    border-width: 2px 0px 0px 0px;
+    transition: 0.2s
+}
+
+#accordion .panel-title > a:hover{
+    background:#003d66; 
+    padding-left: 20px;
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::after  {
+    content:"\f146";
+    float: right;
+    font-family: FontAwesome;
+	margin-right :1em;
+}
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::after  {
+    content:"\f196";
+}
+
+#accordion .panel-body{
+    background:#001E32; 
+    padding: 0px;
+}
+
+#accordion .panel-body li{
+    list-style-type: none;
+    padding: 2px;
+    border-style: solid;
+    border-color:  #003d66;
+    border-width: 2px 0px 0px 0px;
+    transition: 0.2s
+}
+
+#accordion .panel-body li > a{
+    color: #abc9ed;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: inherit;
+    display: block;
+    font-size: 12px;
+}
+
+#accordion .panel-body li:hover{
+    padding-left: 20px;
+    color: #fff;
+    background:#003d66;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-width: 0px;
+}
+
+.single-links ul{
+    list-style-type: none;
+}
+
+.single-links a{
+    font-size: .8em;
+    line-height: 1.25em;
+    color: #abc9ed;
+}
+
+.single-links a:hover{
+    text-decoration: none;
 }

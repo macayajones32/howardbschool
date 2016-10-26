@@ -63,7 +63,7 @@
     letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     border-style: solid;
     border-color:  #003d66;
     border-width: 2px 0px 0px 0px;
@@ -100,11 +100,12 @@
 }
 
 #accordion .panel-body li > a{
-    color: #f2f2f2;
+    color: #abc9ed;
     letter-spacing: 1px;
     text-decoration: none;
     width: inherit;
     display: block;
+    font-size: 12px;
 }
 
 #accordion .panel-body li:hover{
@@ -114,4 +115,18 @@
 }
 .panel-group .panel-heading+.panel-collapse>.panel-body {
     border-width: 0px;
+}
+
+.single-links ul{
+    list-style-type: none;
+}
+
+.single-links a{
+    font-size: .8em;
+    line-height: 1.25em;
+    color: #abc9ed;
+}
+
+.single-links a:hover{
+    text-decoration: none;
 }
