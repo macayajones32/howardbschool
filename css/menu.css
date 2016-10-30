@@ -269,9 +269,11 @@ ul.nav.sub-nav a{
 
 /* sidebar */
 .bs-docs-sidebar {
-    padding-left: 0px;
+    padding: 10px;
+    padding-top: 0;
     margin-top: 20px;
     margin-bottom: 20px;
+    background: #FFF9BC;
 }
 
 .bs-docs-sidebar .barred{
@@ -306,7 +308,7 @@ ul.nav.sub-nav a{
 .bs-docs-sidebar .nav>li>a:focus {
     color: #563d7c;                 
     text-decoration: none;          
-    background-color: transparent;  
+    background-color: transparent;
     border-left: 2px solid #563d7c; 
 }
 
@@ -456,3 +458,4 @@ ul.nav.sub-nav a{
 .single-links a:hover{
     text-decoration: none;
 }
+

@@ -8,7 +8,6 @@
     <meta content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" name="viewport">
     <link href="../css/all-stylesheets.css" rel="stylesheet" type="text/css">
     <link href="../css/menu.css" rel="stylesheet" type="text/css">
-    <link href="../css/side-nav.css" rel="stylesheet" type="text/css">
     <link href="../css/sections.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -16,45 +15,42 @@
     <div w3-include-html="../partials/mainSideNav.html"></div> 
     <div id="main">
     <div w3-include-html="../partials/mainMenu.html"></div> 
-    
-    <img src="../images/howard_logo.png" class="main-logo">
         
+    <!---This is the picture you see in the header---->    
+    <a href="/"><img src="../images/band.png" class="bs-header-img"></a>
     <div class="bs-header" >
-      <div class="image">
-        <img src="../images/firm.jpg" >
-      </div>
-      <div class="container">
-        <h1>Getting started</h1>
+      <div class="header-container">
+        <a href="/"><img src="../images/howard_logo.png" class="main-logo"></a>
+        <h1>Admissions</h1>
         <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
       </div>
     </div>
+    
   
     <div class="page-section white">
-        
-        
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 side">
                     
-            <nav class="bs-docs-sidebar" >
-                <ul class="nav nav-stacked fixed barred" >
-                    <li>
-                        <a href="#">About</a>
-                        <ul class="nav nav-stacked">
-                            <li><a href="#">Message from the Dean</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Board of Visitors</a></li>
-                            <li><a href="#">Noteable Alumni</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Calendar/a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Other</a></li>
-                </ul>          
-            </nav>
-        </div> <!--- end colmd3 ---->
+                    <nav class="bs-docs-sidebar" >
+                        <ul class="nav nav-stacked fixed barred" >
+                            <li>
+                                <a href="#">About</a>
+                                <ul class="nav nav-stacked">
+                                    <li><a href="#">Message from the Dean</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Board of Visitors</a></li>
+                                    <li><a href="#">Noteable Alumni</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Calendar/a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Academics</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>          
+                    </nav>
+                </div> <!--- end colmd3 ---->
                 
                 <div class="col-md-6">
                     <h1>From the Dean of Admissions</h1>
@@ -72,28 +68,22 @@
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="panel panel-default">
-                      <!-- Default panel contents -->
-                      <div class="panel-heading">Panel heading</div>
-                      <div class="panel-body">
-                        <p>...</p>
-                      </div>
-
-                      <!-- List group -->
-                      <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                    <div class="note red">
+                        <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
+                    </div>
+                    <div class="note blue">
+                        <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
+                    </div>
+                    
+                    <div class="note light-blue">
+                        <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
                     </div>
                 </div>
                 
             </div>
         </div>
-    </div>
-    
+    </div><!---page section---->
+    </div><!---main---->
     <div w3-include-html="../partials/footer.html"></div>    
     
     <script src="../js/jquery.min.js">
@@ -102,7 +92,7 @@
     </script> 
     <script src="../js/jquery.scrollTo.js">
     </script> 
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../js/w3data.js"></script>
     <script src="../js/custom.js">//make sure this script always comes last
     </script>
 

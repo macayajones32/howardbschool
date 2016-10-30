@@ -39,6 +39,11 @@ body {
     position: absolute;
     background-color: rgba(0,0,0,0.4);
     background-image: url(../images/grid.png);
+    
+}
+
+.hero-section{
+    
 }
 
 .hero-section .video-background {
