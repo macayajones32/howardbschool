@@ -1,0 +1,22 @@
+        {
+            people: [
+                {
+                  name: "Simeon Kakpovi",
+                  title: "CISSP",
+                  role: "Student",
+                  department: "Information systems"
+                },
+                {
+                  name: "Robert Williams",
+                  title: "CPA",
+                  role: "Faculty",
+                  department: "Accounting"
+                },
+                {
+                  name: "Jon Snow",
+                  title: "Lord",
+                  role: "Ruler",
+                  department: "The North"
+                }
+            ]
+        }

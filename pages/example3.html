@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Howard University School of Business</title>
+    <meta content="Howard Bschool Description" name="description">
+    <meta content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" name="viewport">
+    <link href="../css/all-stylesheets.css" rel="stylesheet" type="text/css">
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../css/sections.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="" id="cover"></div>
+    <div w3-include-html="../partials/mainSideNav.html"></div> 
+    <div id="main">
+    <div w3-include-html="../partials/mainMenu.html"></div> 
+        
+    <!---This is the picture you see in the header---->    
+    <a href="/"><img src="../images/highschool.PNG" class="bs-header-img"></a>
+    <div class="bs-header" >
+      <div class="header-container">
+        <a href="/"><img src="../images/howard_logo.png" class="main-logo"></a>
+        <h1>Faculty</h1>
+        <p>This is information about our accounting program</p>
+      </div>
+    </div>
+    
+  
+    <div class="page-section white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="btn-group-vertical faculty-menu" role="group" >
+                        <ul>
+                            <li><a class="btn-filter" data-target="all">All</a></li>
+                            <li><a class="btn-filter" data-target="acc">Office of the Dean</a></li>
+                            <li><a class="btn-filter" data-target="acc">Department Chair</a></li>
+                            <li><a class="btn-filter" data-target="acc">Accounting</a></li>
+                            <li><a class="btn-filter" data-target="fin">Information Systems &amp; Supply Chain Management</a></li>
+                            <li><a class="btn-filter" data-target="infosys">Finance & International Business</a></li>
+                            <li><a class="btn-filter" data-target="scm">Management</a></li>
+                            <li><a class="btn-filter" data-target="scm">Marketing</a></li>
+                        </ul>
+				    </div>
+                </div> <!--- end colmd3 ---->
+                
+                <div class="col-md-9">
+                       <div class="col-md-6 faculty-profile" data-status='acc'>
+                           <div class="" >
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Accounting</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                        <div class="col-md-6 faculty-profile"  data-status='scm'>
+                           <div class="">
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Supply Chain Management</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                     <div class="col-md-6 faculty-profile" data-status='scm'>
+                           <div class="" >
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Supply Chain Management</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                    <div class="col-md-6 faculty-profile" data-status='infosys'>
+                           <div class="" >
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Information Systems</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                    <div class="col-md-6 faculty-profile" data-status='acc'>
+                           <div class="" >
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Accounting</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                    <div class="col-md-6 faculty-profile">
+                           <div class="faculty-profile">
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Information Systems</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                    <div class="col-md-6 faculty-profile">
+                           <div class="">
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>Robert Williams Ph.D.</h3>
+                                    <p>Associate Professor -  Information Systems</p>
+                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                    
+                    <script id="entry-template" type="text/x-handlebars-template">
+                        {{#each people}}
+                        <div class="col-md-6 faculty-profile">
+                           <div class="">
+                                <img src="../images/backgrounds/2.jpg" width="150px"> 
+                                <div class="details">
+                                    <h3>{{ name}} {{ title }}</h3>
+                                    <p>{{ role }} - {{ department}}</p>
+                                    <a href="#" class="basic-link"> View Profile <i class="fa  fa-chevron-right "></i></a>
+                                </div>
+                           </div>
+                       </div>
+                        {{/each}}
+                    </script>
+                    <div id="content">
+                    </div>
+                    
+                  
+                    
+                </div>
+                
+                
+               
+            </div>
+        </div>
+    </div><!---page section---->
+    </div><!---main---->
+    <div w3-include-html="../partials/footer.html"></div>    
+    
+    <script src="../js/jquery.min.js">
+    </script> 
+    <script src="../js/bootstrap.min.js">
+    </script> 
+    <script src="../js/jquery.scrollTo.js">
+    </script> 
+    <script src="../js/handlebars.js">
+    </script> 
+    <script src="../js/w3data.js"></script>
+    <script src="../js/custom.js">//make sure this script always comes last
+    </script>
+    <script>
+          $(document).ready(function () {
+
+            $('.btn-filter').on('click', function () {
+              var $target = $(this).data('target');
+              console.log($target)
+              if ($target != 'all') {
+                $('.faculty-profile').css('display', 'none');
+                $('.faculty-profile[data-status="' + $target + '"]').fadeIn('slow');
+              } else {
+                $('.faculty-profile').css('display', 'none').fadeIn('slow');
+              }
+            });
+
+         });
+    </script>
+    
+    <script>
+        var source   = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+        var context;
+        $.getJSON("fdata.json", function(json) {
+            context = json; // this will show the info it in firebug console
+            console.log(context)
+        });
+        
+        //var html    = template(context);
+         //console.log(context); 
+    </script>
+
+    
+
+</body>
+</html>

@@ -270,11 +270,14 @@
     border: 0;
     letter-spacing: 3px;
     font-weight: 200;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100px;
 }
 
 /* Sweep To Right */
 .btn.btn-primary {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -288,6 +291,7 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   background:  #001E32;
+  border-radius: 0;
  
 }
 
@@ -432,6 +436,7 @@
 
 .page-section p{
     color: #404040;
+    font-size: 18px;
 }
 
 .main-logo{
@@ -490,9 +495,21 @@
 }
 
 /******note*******/
+
+.spotlight img{
+    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: -50%;
+}
+
+.spotlight.note {
+    position: relative;
+    position: absolute;
+}
+
 .note {
   position: relative;
-  color: #fff !important;
+  color: #fff;
   padding: 1em 1.5em;
   margin: 2em auto;
 }
@@ -514,7 +531,7 @@
 }
 
 .note.red:before{
-  border-color: #eb4760 #fff;
+  border-color: #eb4760 transparent;
 }
 
 .note.blue{
@@ -531,4 +548,74 @@
 
 .note.light-blue:before{
   border-color: #003a63 #fff;
+}
+/********************/
+.faculty-profile{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.faculty-profile img{
+    float: left;
+    margin-right: 10px;
+}
+.details{
+    padding: 10px;
+    padding-top: 0px;
+    
+}
+
+.details h3{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 200;
+    color: #333333;
+}
+
+.details p{
+    font-size: 10px;
+    line-height: 16px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: .8;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.basic-link {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Playfair Display', cursive;
+}
+
+.basic-link:hover, .basic-link:focus{
+    text-decoration: none;
+    color: #001E32;
+}
+
+/*********faculty page menu ****/
+.faculty-menu li{
+    padding: 5px 0;
+    display: block;
+    border-top: 1px solid #326182;
+    transition-duration: .2s;
+    background: #f2f6fc
+;
+}
+
+.faculty-menu a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 5px;
+    display:block;
+}
+
+.faculty-menu li:hover{
+    padding-left: 15px;
+    background: #d5e4f6;
+    cursor: pointer; 
 }

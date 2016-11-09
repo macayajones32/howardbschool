@@ -273,7 +273,9 @@ ul.nav.sub-nav a{
     padding-top: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: #FFF9BC;
+    background: #d5e4f6;/***This is that weird yellow color***/
+    font-weight: 800;
+    transition: .1s; 
 }
 
 .bs-docs-sidebar .barred{
@@ -289,12 +291,16 @@ ul.nav.sub-nav a{
     font-weight: 400;
 }
 
+.bs-docs-sidebar .cat a {
+    font-weight: bold;
+}
+
 /* nested links */
 .bs-docs-sidebar .nav .nav>li>a {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* all links */
@@ -305,10 +311,10 @@ ul.nav.sub-nav a{
 /* active & hover links */
 .bs-docs-sidebar .nav>.active>a, 
 .bs-docs-sidebar .nav>li>a:hover, 
-.bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;                 
+.bs-docs-sidebar .nav>li>a:focus {                 
     text-decoration: none;          
-    background-color: transparent;
+    background-color: #003a63;
+    color: #fff;
     border-left: 2px solid #563d7c; 
 }
 
