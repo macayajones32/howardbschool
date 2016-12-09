@@ -32,10 +32,11 @@
   Once you do that, you can go back to the github page and create a pull request. Once I confirm the pull request, I will delete the branch and you simply create a new branch for your next set of changes.
 
 ## Basic linux commands
-
+  ~~~
   ls - list out the contents of your current folder
   rm - delete a file
   cd - change directory
   mkdir - create a folder
   touch - create a file
   vim - create/edit a file
+  ~~~
