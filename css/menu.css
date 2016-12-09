@@ -270,25 +270,28 @@ ul.nav.sub-nav a{
 /* sidebar */
 .bs-docs-sidebar {
     padding: 10px;
-    padding-top: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: #d5e4f6;/***This is that weird yellow color***/
     font-weight: 800;
     transition: .1s; 
+    font-weight: 100px;
+    background: #003a63;
 }
 
-.bs-docs-sidebar .barred{
-    padding-top: 20px;
-    border-top: 10px #003a63 solid;
+
+.bs-docs-sidebar:hover:after {
+	width: 100%;
+	background: blue;
 }
+
 
 /* all links */
 .bs-docs-sidebar .nav>li>a {
-    color: #003a63;
+    color: #fff;
     padding: 4px 10px;
     font-size: 17px;
     font-weight: 400;
+    transition-duration: .5s;
 }
 
 .bs-docs-sidebar .cat a {
@@ -301,6 +304,7 @@ ul.nav.sub-nav a{
     padding-bottom: 1px;
     padding-left: 30px;
     font-size: 14px;
+    color: #abc9ed;
 }
 
 /* all links */
@@ -312,10 +316,8 @@ ul.nav.sub-nav a{
 .bs-docs-sidebar .nav>.active>a, 
 .bs-docs-sidebar .nav>li>a:hover, 
 .bs-docs-sidebar .nav>li>a:focus {                 
-    text-decoration: none;          
-    background-color: #003a63;
-    color: #fff;
-    border-left: 2px solid #563d7c; 
+    background: #005999;
+    padding-left: 15px;
 }
 
 /* all active links */
@@ -325,10 +327,16 @@ ul.nav.sub-nav a{
     font-weight: 700;
 }
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 500;
+.bs-docs-sidebar .nav .nav a, 
+.bs-docs-sidebar .nav .nav a:hover>a,
+.bs-docs-sidebar .nav .nav a:focus>a {
+    font-weight: 200;
+    padding-left: 40px;
+}
+
+.bs-docs-sidebar .nav .nav>li>a:hover {
+    /*add trasnparent border */
+    padding-left: 40px;
 }
 
 /*****side nav ******/
