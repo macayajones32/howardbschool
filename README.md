@@ -22,3 +22,5 @@
 
   $ git push -u origin simeon_homepage_work
   ~~~
+
+  Once you do that, you can go back to the github page and create a pull request. Once I confirm the pull request, I will delete the branch and you simply create a new branch for your next set of changes.
