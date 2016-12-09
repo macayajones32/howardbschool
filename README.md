@@ -3,7 +3,7 @@
 ##Welcome!
   Thank you for taking the time to work on this project. To get started, simply request to be a collaborator and I will approve it. This will allow you to push code to the repositor!
   ~~~
-  git pull https://github.com/kkneomis/howardbschool.git
+  git clone https://github.com/kkneomis/howardbschool.git
   cd howardbschool
   ~~~
 
