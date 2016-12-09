@@ -18,5 +18,7 @@
   $ git checkout -b simeon_homepage_work  
   #or some other descriptive name
   
-  $ git commit -a -m 'added a new footer [issue 53]'
+  $ git commit -m 'added a new footer [issue 53]'
+
+  $ git push -u origin simeon_homepage_work
   ~~~
