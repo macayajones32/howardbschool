@@ -24,8 +24,6 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             document.getElementById("mySidenav").innerHTML = partial
             w3IncludeHTML();
             
-            
-            adjust_links()
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -94,12 +92,6 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
         //Call menus!
          w3IncludeHTML();
 
-        //Adjust menu links 
-        function adjust_links(){
-            var menu = document.getElementById("menu-content");
-            console.log(menu);
-        }
-
         
         // Page awareness 
         //returns depth of page
@@ -115,7 +107,8 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
         }
 
         function w3IncludeHTML() {
-          pre = 'href="' + introspect();
+          pre_link = 'href="' + introspect();
+          pre_src = 'src="' + introspect();
           var z, i, a, file, xhttp;
           z = document.getElementsByTagName("*");
           for (i = 0; i < z.length; i++) {
@@ -126,7 +119,7 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
               xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                   a.removeAttribute("w3-include-html");
-                  a.innerHTML = this.responseText.replace(/href="\[pre\]/g, pre);
+                  a.innerHTML = this.responseText.replace(/href="\[pre\]/g, pre_link).replace(/src="\[pre\]/g, pre_src);
                   z[i].parentNode.replaceChild(a, z[i]);
                   w3IncludeHTML();
                 }
