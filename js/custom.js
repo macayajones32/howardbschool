@@ -4,9 +4,10 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
 
 /**************side nav------------------------------****/
     // is the navigation panel open?
+       
         var status = 0;
                 /* Set the width of the side navigation to 250px and add a black background color to body */
-        function openNav() {
+        function openNav(e) {
             status = 1;
             $('.side-tabs').css({
                     'right': '0'
@@ -14,6 +15,18 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             document.getElementById("mySidenav").style.right = "0px";
             document.getElementById("menu").classList.add("open");
             document.getElementById("cover").classList.add("overlay");
+            
+            /**** setting which navigation will appear*/
+            count = introspect();
+            pre = "";
+            for (var i=0; i<count; i++){
+                pre += "../"
+            } //building context for relative links
+            nav = e.childNodes[1].id; //this is the sideNav file we want
+            partial = '<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>'
+            partial += '<div id="menu-content" w3-include-html="' + pre + 'partials/'+ nav +'.html"></div>'
+            document.getElementById("mySidenav").innerHTML = partial
+            w3IncludeHTML();
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -33,7 +46,7 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             }
         }
         
-        
+        /* if we have scrolled past a certain amount we want the little corner menu, not the big one*/
         $(window).scroll(function() {
             if (($(this).scrollTop() > 300) && (status == 0)) { //use `this`, not `document`
                 $('.side-tabs').css({
@@ -72,14 +85,20 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             for (var i=0; i<items.length; i++) {
                 if (items[i] == e) {
                     e.style.display = 'block';
-                    //e.fadeIn(1000);
                 } else {
                     items[i].style.display = 'none';
                 }
             }
         }
 
-        /**************wheel menu stuff------------------------------****/
+
         /**************Call menus!------------------------------****/
          w3IncludeHTML();
-        /**************call menus!------------------------------****/
+
+
+        /******* Page awareness ********/
+        function introspect(){
+            var link = document.getElementsByTagName("link")[0].getAttribute("href");
+            var count = (link.match(/\.\.\//g) || []).length;
+            return count;
+        }
