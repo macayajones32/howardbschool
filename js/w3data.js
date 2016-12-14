@@ -111,28 +111,7 @@ function w3DisplayData(id, data) {
         a.innerHTML = a.innerHTML.replace(r, result);
     }
 }
-function w3IncludeHTML() {
-  var z, i, a, file, xhttp;
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    if (z[i].getAttribute("w3-include-html")) {
-      a = z[i].cloneNode(false);
-      file = z[i].getAttribute("w3-include-html");
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          a.removeAttribute("w3-include-html");
-          a.innerHTML = this.responseText;
-          z[i].parentNode.replaceChild(a, z[i]);
-          w3IncludeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      return;
-    }
-  }
-}
+
 function w3Http(target, readyfunc, xml, method) {
     var httpObj;
     if (!method) {method = "GET"; }

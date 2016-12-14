@@ -339,6 +339,12 @@ ul.nav.sub-nav a{
     padding-left: 40px;
 }
 
+@media (max-width: 600px){
+    .bs-docs-sidebar{
+        display: none;
+    }
+}
+
 /*****side nav ******/
 /* The side navigation menu */
 .sidenav {
@@ -467,9 +473,98 @@ ul.nav.sub-nav a{
     font-size: .8em;
     line-height: 1.25em;
     color: #abc9ed;
+    transition-duration: .2s;
 }
+
 
 .single-links a:hover{
     text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
 }
 
+/*-------- search nav --------*/
+.sub-nav{
+    padding: 20px;
+}
+
+.sub-nav h4{
+    color: #fff;
+}
+
+.sub-nav ul{
+    padding-left: 0px;
+}
+
+
+.sub-nav li{
+    list-style-type: none;
+    padding: 6px 4px 6px 4px;
+    border-style: solid;
+    border-color:  #003d66;
+    border-width: 2px 0px 0px 0px;
+    transition: 0.2s;
+    width: 300px;
+}
+
+.sub-nav li a{
+    color: #abc9ed;
+    text-decoration: none;
+    width: inherit;
+    display: block;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 3px;
+}
+
+.sub-nav li:hover{
+    padding-left: 20px;
+    color: #fff;
+    background:#003d66;
+}
+
+.media li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.media li a{
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+
+.media .image{
+    width: 20%;
+}
+.media .headline{
+    width: 80%;
+}
+
+.media li a img{
+    text-align: right;
+}
+
+.navInput{
+    width: 300px;
+    padding: 6px 6px 6px 8px;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+     box-shadow: none; 
+	outline: 0;
+	margin: 0;
+    border: 5px solid #2a6ebb;
+}
+
+.navSubmit{
+    width: 300px;
+    border:5px solid #2a6ebb;
+    background-color:#2a6ebb;
+    color:#fafafa;
+    text-transform: uppercase;
+    padding:3px 3px;
+    letter-spacing: 3px;
+}
