@@ -432,7 +432,6 @@ hu-grid .box{
 }
 
 
-
 .page-section .intro {
     font-size: 20px;
     font-weight: 400;
@@ -483,7 +482,6 @@ hu-grid .box{
 }
 
 
-
 .bs-header h1{
     margin-top: 100px;
     font-size: 50px;
@@ -507,6 +505,52 @@ hu-grid .box{
     width: 100%;
 }
 
+@media (max-width: 1100px){
+    .bs-header-img{
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .bs-header{
+        position: relative;
+        top: 0;
+        padding: 3px;
+        height: 200px;
+    }
+
+    .bs-header-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .bs-header h1{
+        font-size: 30px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .bs-header p{
+        display: none;
+    }
+    
+    .logo-tab img{
+        top: 0;
+        padding: 5px;
+        width: 100%;
+    }
+
+    
+    .page-section{
+        padding: 5px;
+        margin-top: 5px;
+    }
+    
+  
+     
+}
 /******note*******/
 
 .spotlight img{

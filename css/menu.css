@@ -339,6 +339,12 @@ ul.nav.sub-nav a{
     padding-left: 40px;
 }
 
+@media (max-width: 600px){
+    .bs-docs-sidebar{
+        display: none;
+    }
+}
+
 /*****side nav ******/
 /* The side navigation menu */
 .sidenav {
@@ -467,10 +473,14 @@ ul.nav.sub-nav a{
     font-size: .8em;
     line-height: 1.25em;
     color: #abc9ed;
+    transition-duration: .2s;
 }
+
 
 .single-links a:hover{
     text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
 }
 
 /*-------- search nav --------*/
