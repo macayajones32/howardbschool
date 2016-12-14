@@ -210,11 +210,12 @@ hu-grid .box{
 /*****footer ********/
 
 .footer-section{
-    padding: 50px;
+    padding: 100px;
     background: #001E32;
     color: #fff;
-}
+} 
 
+/*001E32 */
 .footer-section ul{
     list-style-type: none;
 }
@@ -512,7 +513,7 @@ hu-grid .box{
 .spotlight img{
     margin-bottom: 0;
     width: 100%;
-    margin-bottom: -50%;
+    margin-bottom: -20%;
 }
 
 .spotlight.note {
