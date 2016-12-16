@@ -748,5 +748,30 @@ figure.effect-apollo:hover p {
 	transition-delay: 0.1s;
 }
 
+/*****news******/
+.news h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+}
 
+.news p{
+    font-weight: 300;
+    line-height: 1.7;
+    padding-top: 10px;
+    font-size: 18px;
+}
 
+.label{
+    text-transform: uppercase;
+    background: #001E32;
+    letter-spacing: 1px;
+}
+
+.widgettitle{
+    border-left-color: #fff;
+    margin-bottom: 30px;
+    border-left: 6px solid;
+    background: #f5f5f5;
+    padding: 10px 10px 10px 20px;
+    font-size: 18px;
+}
