@@ -218,19 +218,22 @@ hu-grid .box{
 /*001E32 */
 .footer-section ul {
     list-style-type: none; 
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+     
 }
 
 .footer-section a{
     color: #0099cc; 
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   
 } 
 
 a:hover, a:focus {
-  background: #003a63;
-  color: #0099cc;
+  background: #none;
+  color: #ffffff;
   text-shadow: 0px 1px 0px #000; 
-  text-decoration: none;
+  text-decoration: none; 
+  -webkit-transition-timing-function: ease-out;
 }
 
 .footer-section .arrow a{
@@ -250,6 +253,15 @@ a:hover, a:focus {
     font-weight: 200px; 
     color: gainsboro;
   
+}  
+
+div.vertical-line{
+  width: 1px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
 } 
 
 address{
