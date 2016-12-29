@@ -18,7 +18,7 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             
             /**** setting which navigation will appear*/
             pre = introspect(); 
-            nav = e.childNodes[1].id; //this is the sideNav file we want
+            nav = e; //this is the sideNav file we want
             partial = '<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>'
             partial += '<div id="menu-content" w3-include-html="' + pre + 'partials/'+ nav +'.html"></div>'
             document.getElementById("mySidenav").innerHTML = partial
