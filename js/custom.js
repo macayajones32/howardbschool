@@ -94,6 +94,7 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
         function w3IncludeHTML() {
           pre_link = 'href="' + introspect();
           pre_src = 'src="' + introspect();
+          pre_action = 'action="' + introspect();
           var z, i, a, file, xhttp;
           z = document.getElementsByTagName("*");
           for (i = 0; i < z.length; i++) {
@@ -104,7 +105,7 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
               xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                   a.removeAttribute("w3-include-html");
-                  a.innerHTML = this.responseText.replace(/href="\[pre\]/g, pre_link).replace(/src="\[pre\]/g, pre_src);
+                  a.innerHTML = this.responseText.replace(/href="\[pre\]/g, pre_link).replace(/src="\[pre\]/g, pre_src).replace(/action="\[pre\]/g, pre_action);
                   z[i].parentNode.replaceChild(a, z[i]);
                   w3IncludeHTML();
                 }
