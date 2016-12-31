@@ -1,0 +1,151 @@
+{
+ "people":   [
+    {
+        "id":"awilbon",
+        "name":"Anthony Wilbon",
+        "title":"Ph.D.",
+        "role":"Assistant Dean for Administration and Associate Professor",
+        "department":" Information Systems and Supply Chain Management",
+        "phone":"202-806-1608",
+        "email":"anthony.wilbon@howard.edu",
+        "office_hours":"Mondays, Wednesdays 11am-12pm",
+        "tags":"administration infosys",
+        "biography":"Dr. Anthony Wilbon’s expertise is in strategic technology management. He is also a certified Project Management Professional (PMP). Particular areas of research include technology strategy, quantitative analysis, information technology, and technology innovation and entrepreneurship. Research in sustainable environmental engineering through the integration of social, environmental, and economic considerations into systems design methods has also been explored through funded NOAA research projects. Dr. Wilbon has previously held positions at organizations such as the Board of Governors of the Federal Reserve System and Booz Allen and Hamilton. His professional experience and capabilities extend to business, management, and technology related topics including systems application and technology, production and operations management, project management, systems development life cycle, and research methodology (quantitative and qualitative).",
+        "areas_of_expertise":[
+            "Technology strategy and management: strategic management, technology and strategic planning for implementation of operational systems",
+            "Systems Development Life Cycle: systems development projects, project management software for development",
+            "Environmental Management: Integrated management in the environmental systems for decision support"
+        ],
+        "education":[
+            "Ph.D., Management of Science, Technology, and Innovation, The George Washington University, Washington, DC 1999",
+            "MBA, Management Howard University, Washington, DC 1990",
+            "B.S. , Electrical Engineering Michigan State University, East Lansing, MI 1986"
+        ],
+        "courses_taught":[
+            "Project Management (MBA)",
+            "Production and Operations Research (MBA)",
+            "Management Information Systems (undergrad)",
+            "Production and Operations Management (undergrad)"
+        ],
+        "selected_research":[
+            "Ogbolu, M.N, Singh, R.P., and Wilbon, A.D. (2015). Legitimacy, attitudes, and intended patronage: Understanding challenges facing Black entrepreneurs. Journal of Developmental Entrepreneurship.",
+            "Foster, M.K., Abbey, A., Callow, M., Zu, X. and Wilbon, A. (2014). Rethinking virtuality and its impact on teams. Small Group Research.",
+            "Coverdale, T.S. and Wilbon, A.D. (2013). The influence of social presence on e-loyalty of women online shoppers: An application of the social identity approach to website design. International Journal of e-Adoption 5(1): 17-36.",
+            "Wilbon, A.D., (2012). Interactive planning for strategy development in academic-based cooperative research enterprises. Technology Analysis and Strategic Management, 24(1):89-105.",
+            "Wilbon, A.D., Bundy M., and Clark, K. (2011). Case Study: Entrepreneurship in the Chesapeake Bay Oyster Industry. International Journal of Case Studies in Management. 9(2), Case Study No. 9402011016, Teaching Notes No. 5402011009 (Best Paper Award , 2011)",
+            "Wilbon, A.D. and Crump, M., (2008). The Northwest Baltimore Automotive Association. International Journal of Case Studies in Management. Volume 6, Issue 2, Case Study No. 9702008001, Teaching Note No. 5702008001.",
+            "Wilbon, A.D., Crump, M, and Jackson, D., (2008). Strategic choice and environmental challenge in small to medium sized auto service firms. The Management Case Study Journal 8(1): 19-36."
+        ]
+    },
+    {
+        "id":"skakpovi",
+        "name":"Simeon Kakpovi",
+        "title":"Not Ph.D.",
+        "role":"Assistant Dean for Administration and Associate Professor",
+        "department":" Information Systems and Supply Chain Management",
+        "phone":"202-806-1608",
+        "email":"anthony.wilbon@howard.edu",
+        "office_hours":"Mondays, Wednesdays 11am-12pm",
+        "tags":"chair accounting",
+        "biography":"Dr. Anthony Wilbon’s expertise is in strategic technology management. He is also a certified Project Management Professional (PMP). Particular areas of research include technology strategy, quantitative analysis, information technology, and technology innovation and entrepreneurship. Research in sustainable environmental engineering through the integration of social, environmental, and economic considerations into systems design methods has also been explored through funded NOAA research projects. Dr. Wilbon has previously held positions at organizations such as the Board of Governors of the Federal Reserve System and Booz Allen and Hamilton. His professional experience and capabilities extend to business, management, and technology related topics including systems application and technology, production and operations management, project management, systems development life cycle, and research methodology (quantitative and qualitative).",
+        "areas_of_expertise":[
+            "Technology strategy and management: strategic management, technology and strategic planning for implementation of operational systems",
+            "Systems Development Life Cycle: systems development projects, project management software for development",
+            "Environmental Management: Integrated management in the environmental systems for decision support"
+        ],
+        "education":[
+            "Ph.D., Management of Science, Technology, and Innovation, The George Washington University, Washington, DC 1999",
+            "MBA, Management Howard University, Washington, DC 1990",
+            "B.S. , Electrical Engineering Michigan State University, East Lansing, MI 1986"
+        ],
+        "courses_taught":[
+            "Project Management (MBA)",
+            "Production and Operations Research (MBA)",
+            "Management Information Systems (undergrad)",
+            "Production and Operations Management (undergrad)"
+        ],
+        "selected_research":[
+            "Ogbolu, M.N, Singh, R.P., and Wilbon, A.D. (2015). Legitimacy, attitudes, and intended patronage: Understanding challenges facing Black entrepreneurs. Journal of Developmental Entrepreneurship.",
+            "Foster, M.K., Abbey, A., Callow, M., Zu, X. and Wilbon, A. (2014). Rethinking virtuality and its impact on teams. Small Group Research.",
+            "Coverdale, T.S. and Wilbon, A.D. (2013). The influence of social presence on e-loyalty of women online shoppers: An application of the social identity approach to website design. International Journal of e-Adoption 5(1): 17-36.",
+            "Wilbon, A.D., (2012). Interactive planning for strategy development in academic-based cooperative research enterprises. Technology Analysis and Strategic Management, 24(1):89-105.",
+            "Wilbon, A.D., Bundy M., and Clark, K. (2011). Case Study: Entrepreneurship in the Chesapeake Bay Oyster Industry. International Journal of Case Studies in Management. 9(2), Case Study No. 9402011016, Teaching Notes No. 5402011009 (Best Paper Award , 2011)",
+            "Wilbon, A.D. and Crump, M., (2008). The Northwest Baltimore Automotive Association. International Journal of Case Studies in Management. Volume 6, Issue 2, Case Study No. 9702008001, Teaching Note No. 5702008001.",
+            "Wilbon, A.D., Crump, M, and Jackson, D., (2008). Strategic choice and environmental challenge in small to medium sized auto service firms. The Management Case Study Journal 8(1): 19-36."
+        ]
+    },
+     {
+        "id":"rsmith",
+        "name":"Rother Smtih",
+        "title":"Not Ph.D.",
+        "role":"Associate Professor",
+        "department":" Information Systems and Supply Chain Management",
+        "phone":"202-806-1608",
+        "email":"anthony.wilbon@howard.edu",
+        "office_hours":"Mondays, Wednesdays 11am-12pm",
+        "tags":"finance",
+        "biography":"Dr. Anthony Wilbon’s expertise is in strategic technology management. He is also a certified Project Management Professional (PMP). Particular areas of research include technology strategy, quantitative analysis, information technology, and technology innovation and entrepreneurship. Research in sustainable environmental engineering through the integration of social, environmental, and economic considerations into systems design methods has also been explored through funded NOAA research projects. Dr. Wilbon has previously held positions at organizations such as the Board of Governors of the Federal Reserve System and Booz Allen and Hamilton. His professional experience and capabilities extend to business, management, and technology related topics including systems application and technology, production and operations management, project management, systems development life cycle, and research methodology (quantitative and qualitative).",
+        "areas_of_expertise":[
+            "Technology strategy and management: strategic management, technology and strategic planning for implementation of operational systems",
+            "Systems Development Life Cycle: systems development projects, project management software for development",
+            "Environmental Management: Integrated management in the environmental systems for decision support"
+        ],
+        "education":[
+            "Ph.D., Management of Science, Technology, and Innovation, The George Washington University, Washington, DC 1999",
+            "MBA, Management Howard University, Washington, DC 1990",
+            "B.S. , Electrical Engineering Michigan State University, East Lansing, MI 1986"
+        ],
+        "courses_taught":[
+            "Project Management (MBA)",
+            "Production and Operations Research (MBA)",
+            "Management Information Systems (undergrad)",
+            "Production and Operations Management (undergrad)"
+        ],
+        "selected_research":[
+            "Ogbolu, M.N, Singh, R.P., and Wilbon, A.D. (2015). Legitimacy, attitudes, and intended patronage: Understanding challenges facing Black entrepreneurs. Journal of Developmental Entrepreneurship.",
+            "Foster, M.K., Abbey, A., Callow, M., Zu, X. and Wilbon, A. (2014). Rethinking virtuality and its impact on teams. Small Group Research.",
+            "Coverdale, T.S. and Wilbon, A.D. (2013). The influence of social presence on e-loyalty of women online shoppers: An application of the social identity approach to website design. International Journal of e-Adoption 5(1): 17-36.",
+            "Wilbon, A.D., (2012). Interactive planning for strategy development in academic-based cooperative research enterprises. Technology Analysis and Strategic Management, 24(1):89-105.",
+            "Wilbon, A.D., Bundy M., and Clark, K. (2011). Case Study: Entrepreneurship in the Chesapeake Bay Oyster Industry. International Journal of Case Studies in Management. 9(2), Case Study No. 9402011016, Teaching Notes No. 5402011009 (Best Paper Award , 2011)",
+            "Wilbon, A.D. and Crump, M., (2008). The Northwest Baltimore Automotive Association. International Journal of Case Studies in Management. Volume 6, Issue 2, Case Study No. 9702008001, Teaching Note No. 5702008001.",
+            "Wilbon, A.D., Crump, M, and Jackson, D., (2008). Strategic choice and environmental challenge in small to medium sized auto service firms. The Management Case Study Journal 8(1): 19-36."
+        ]
+    },{
+        "id":"bwilliams",
+        "name":"Bob Williams",
+        "title":"Ph.D.",
+        "role":"Assistant Dean for Administration and Associate Professor",
+        "department":" Information Systems and Supply Chain Management",
+        "phone":"202-806-1608",
+        "email":"anthony.wilbon@howard.edu",
+        "office_hours":"Mondays, Wednesdays 11am-12pm",
+        "tags":"marketing",
+        "biography":"Dr. Anthony Wilbon’s expertise is in strategic technology management. He is also a certified Project Management Professional (PMP). Particular areas of research include technology strategy, quantitative analysis, information technology, and technology innovation and entrepreneurship. Research in sustainable environmental engineering through the integration of social, environmental, and economic considerations into systems design methods has also been explored through funded NOAA research projects. Dr. Wilbon has previously held positions at organizations such as the Board of Governors of the Federal Reserve System and Booz Allen and Hamilton. His professional experience and capabilities extend to business, management, and technology related topics including systems application and technology, production and operations management, project management, systems development life cycle, and research methodology (quantitative and qualitative).",
+        "areas_of_expertise":[
+            "Technology strategy and management: strategic management, technology and strategic planning for implementation of operational systems",
+            "Systems Development Life Cycle: systems development projects, project management software for development",
+            "Environmental Management: Integrated management in the environmental systems for decision support"
+        ],
+        "education":[
+            "Ph.D., Management of Science, Technology, and Innovation, The George Washington University, Washington, DC 1999",
+            "MBA, Management Howard University, Washington, DC 1990",
+            "B.S. , Electrical Engineering Michigan State University, East Lansing, MI 1986"
+        ],
+        "courses_taught":[
+            "Project Management (MBA)",
+            "Production and Operations Research (MBA)",
+            "Management Information Systems (undergrad)",
+            "Production and Operations Management (undergrad)"
+        ],
+        "selected_research":[
+            "Ogbolu, M.N, Singh, R.P., and Wilbon, A.D. (2015). Legitimacy, attitudes, and intended patronage: Understanding challenges facing Black entrepreneurs. Journal of Developmental Entrepreneurship.",
+            "Foster, M.K., Abbey, A., Callow, M., Zu, X. and Wilbon, A. (2014). Rethinking virtuality and its impact on teams. Small Group Research.",
+            "Coverdale, T.S. and Wilbon, A.D. (2013). The influence of social presence on e-loyalty of women online shoppers: An application of the social identity approach to website design. International Journal of e-Adoption 5(1): 17-36.",
+            "Wilbon, A.D., (2012). Interactive planning for strategy development in academic-based cooperative research enterprises. Technology Analysis and Strategic Management, 24(1):89-105.",
+            "Wilbon, A.D., Bundy M., and Clark, K. (2011). Case Study: Entrepreneurship in the Chesapeake Bay Oyster Industry. International Journal of Case Studies in Management. 9(2), Case Study No. 9402011016, Teaching Notes No. 5402011009 (Best Paper Award , 2011)",
+            "Wilbon, A.D. and Crump, M., (2008). The Northwest Baltimore Automotive Association. International Journal of Case Studies in Management. Volume 6, Issue 2, Case Study No. 9702008001, Teaching Note No. 5702008001.",
+            "Wilbon, A.D., Crump, M, and Jackson, D., (2008). Strategic choice and environmental challenge in small to medium sized auto service firms. The Management Case Study Journal 8(1): 19-36."
+        ]
+    }
+]
+}

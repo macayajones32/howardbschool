@@ -28,120 +28,42 @@
     
   
     <div class="page-section white">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row is-table-row"> 
                 <div class="col-md-3">
-                    <div class="btn-group-vertical faculty-menu" role="group" >
-                        <ul>
-                            <li><a class="btn-filter" data-target="all">All</a></li>
-                            <li><a class="btn-filter" data-target="acc">Office of the Dean</a></li>
-                            <li><a class="btn-filter" data-target="acc">Department Chair</a></li>
-                            <li><a class="btn-filter" data-target="acc">Accounting</a></li>
-                            <li><a class="btn-filter" data-target="fin">Information Systems &amp; Supply Chain Management</a></li>
-                            <li><a class="btn-filter" data-target="infosys">Finance & International Business</a></li>
-                            <li><a class="btn-filter" data-target="scm">Management</a></li>
-                            <li><a class="btn-filter" data-target="scm">Marketing</a></li>
-                        </ul>
-				    </div>
-                </div> <!--- end colmd3 ---->
+                     <input class="search" id="system-search" class="form-control" placeholder="Search..." />
+                    
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button class="btn btn-primary btn-block" onclick="find('')">All</button>
+                        <button class="btn btn-primary btn-block" onclick="find('Administration')">Administration</button>
+                        <button class="btn btn-primary btn-block" onclick="find('Chair')">Chairs</button>
+                         <button class="btn btn-primary btn-block" onclick="find('Accounting')">Accounting</button>
+                         <button class="btn btn-primary btn-block" onclick="find('Finance')">Finance & International Business</button>
+                         <button class="btn btn-primary btn-block" onclick="find('Information Systems')">Information Systems & Supply Chain Management</button>
+                         <button class="btn btn-primary btn-block" onclick="find('management')">Management </button>
+                         <button class="btn btn-primary btn-block" onclick="find('marketing')">Marketing </button>
+                    </div>
+                   
+                    
+                </div>
                 
-                <div class="col-md-9">
-                       <div class="col-md-6 faculty-profile" data-status='acc'>
-                           <div class="" >
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Accounting</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                        <div class="col-md-6 faculty-profile"  data-status='scm'>
-                           <div class="">
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Supply Chain Management</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                     <div class="col-md-6 faculty-profile" data-status='scm'>
-                           <div class="" >
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Supply Chain Management</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                    <div class="col-md-6 faculty-profile" data-status='infosys'>
-                           <div class="" >
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Information Systems</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                    <div class="col-md-6 faculty-profile" data-status='acc'>
-                           <div class="" >
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Accounting</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                    <div class="col-md-6 faculty-profile">
-                           <div class="faculty-profile">
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Information Systems</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
-                    <div class="col-md-6 faculty-profile">
-                           <div class="">
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>Robert Williams Ph.D.</h3>
-                                    <p>Associate Professor -  Information Systems</p>
-                                    <a href="#" class="basic-link">View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
-                           </div>
-                       </div>
-                    
+                <div class="col-md-9" id="faculty-list">
                     <script id="entry-template" type="text/x-handlebars-template">
                         {{#each people}}
-                        <div class="col-md-6 faculty-profile">
-                           <div class="">
-                                <img src="../../../images/backgrounds/2.jpg" width="150px"> 
-                                <div class="details">
-                                    <h3>{{ name}} {{ title }}</h3>
-                                    <p>{{ role }} - {{ department}}</p>
-                                    <a href="#" class="basic-link"> View Profile <i class="fa  fa-chevron-right "></i></a>
-                                </div>
+                        <div class="col-md-4 faculty-profile {{tags}}">
+                           <div class="box">
+                               <a href="example.html?id={{id}}" > 
+                                    <img src="../../../images/backgrounds/2.jpg" width="150px"> 
+                                    <div class="details">
+                                        <h3>{{ name}} {{ title }}</h3>
+                                        <p><span class="role"></spanclass>{{ role }}</span><br> {{ department}}</p>
+                                    </div>
+                                </a>
                            </div>
                        </div>
                         {{/each}}
                     </script>
-                    <div id="content">
-                    </div>
-                    
-                  
-                    
+                    <div id="content"></div>      
                 </div>
                 
                 
@@ -160,11 +82,12 @@
     </script> 
     <script src="../../../js/handlebars.js">
     </script> 
+    <script src="mustache.js"></script>
     <script src="../../../js/w3data.js"></script>
     <script src="../../../js/custom.js">//make sure this script always comes last
     </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script>
-          $(document).ready(function () {
 
             $('.btn-filter').on('click', function () {
               var $target = $(this).data('target');
@@ -176,9 +99,36 @@
                 $('.faculty-profile').css('display', 'none').fadeIn('slow');
               }
             });
-
-         });
+              
+            $.getJSON('fdata.json', {}, function(context, textStatus, jqXHr) {
+	               var source   = $("#entry-template").html();
+                   var template = Handlebars.compile(source);
+                   var content    = template(context);
+                   $('#content').html(content);
+	           });
+              
+            
+            function find(word){
+               people = document.getElementsByClassName('faculty-profile');
+               for (var i = 0; i < people.length; i++) {
+                   profile = String(people[i].innerHTML).toLowerCase();
+                   if(profile.includes(word.toLowerCase())){
+                       people[i].style.display = "block";
+                   } else{
+                       people[i].style.display = "none";
+                   }
+                } 
+            }
+            
+            $('#system-search').keyup( function() {
+                var inputText = $(this).val()
+                find(inputText);
+            });
+            
+              
     </script>
+
+    
     
 
 

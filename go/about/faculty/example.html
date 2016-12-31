@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Howard University School of Business</title>
+	<meta content="Howard Bschool Description" name="description">
+	<meta content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" name="viewport">
+	<link href="../../../css/all-stylesheets.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/menu.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/sections.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="" id="cover"></div>
+	<div></div>
+	<div id="main">
+		<div></div><!---This is the picture you see in the header==--><a href="/"><img class="bs-header-img" src="../../../images/band.png"></a>
+		<div class="bs-header">
+			<div class="header-container">
+				<a href="/"><img class="main-logo" src="../../../images/howard_logo.png"></a>
+				<h1>Faculty</h1>
+				<p>Barron H. Harvey Ph.D.</p>
+			</div>
+		</div>
+		<div class="page-section white">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9">
+						<script id="template" type="x-tmpl-mustache">
+                              <h2>{{name}} {{title}}</h2>
+                              <h6>{{role}} <br>{{department}}</h6>
+                              <p>{{phone}}</p>
+                              <p>{{email}}</p>
+                              <strong>Office hours:</strong>{{office_hours}}
+
+                              <strong><p>Areas of expertise</p></strong>
+                              {{#areas_of_expertise}}
+                               <ul>
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/areas_of_expertise}}
+
+                              <strong><p>Education</p></strong>
+                              {{#education}}
+                               <ul>
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/education}}
+
+                              <strong><p>Courses Taught</p></strong>
+                              {{#courses_taught}}
+                               <ul>
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/courses_taught}}
+
+                              <strong><p>Selected Research</p></strong>
+                              {{#selected_research}}
+                               <ul>
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/selected_research}}
+						</script>
+						<div id="target"></div>
+					</div>
+					<div class="col-md-3">
+						<div class="spotlight"><img class="img-responsive" src="../../../images/harvey.jpg"></div>
+					</div>
+				</div>
+			</div>
+		</div><!---page section==-->
+	</div><!---main==-->
+	<div></div>
+	<script src="../../../js/jquery.min.js">
+	</script> 
+	<script src="../../../js/bootstrap.min.js">
+	</script> 
+	<script src="../../../js/jquery.scrollTo.js">
+	</script> 
+	<script src="../../../js/w3data.js">
+	</script>  
+	<script src="mustache.js">
+	</script> 
+	<script>
+	       /*
+	       http://www.example.com/index.php?id=1&image=awesome.jpg
+	       Calling getQueryVariable("id") - would return "1".
+	       Calling getQueryVariable("image") - would return "awesome.jpg".
+	       */
+	       function getQueryVariable(variable){
+	              var query = window.location.search.substring(1);
+	              var vars = query.split("&");
+	              for (var i=0;i<vars.length;i++) {
+	                      var pair = vars[i].split("=");
+	                      if(pair[0] == variable){return pair[1];}
+	              }
+	              return(false);
+	       }
+	       
+	       function find_by_id(data, id) {
+	           for (var i=0;i<data.length;i++) {
+	               if (id == data[i]['id']){
+	                   return data[i];
+	               }
+	            }  
+	            return 'no match found'
+	        }
+	       
+	  
+	           $.getJSON('fdata.json', {}, function(channelData, textStatus, jqXHr) {
+	               var template = $('#template').html();
+	               Mustache.parse(template);   // optional, speeds up future uses
+	               person = getQueryVariable('id') //find person in url
+	               data = find_by_id(channelData['people'], person) //retrieve information for that person
+	               var rendered = Mustache.render(template, data); //redner the data
+	               $('#target').html(rendered);
+	           });
+	</script>
+    <script src="../../../js/custom.js">
+	//make sure this script always comes last
+	</script>
+</body>
+</html>
