@@ -738,7 +738,7 @@ address{
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  transition-duration: .5s;
+  transition-duration: 5s;
 }
 
 .faculty-profile a{

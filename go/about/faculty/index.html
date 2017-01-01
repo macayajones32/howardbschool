@@ -52,17 +52,17 @@
                 <div class="col-md-9" id="faculty-list">
                     <script id="entry-template" type="text/x-handlebars-template">
                         {{#each people}}
-                        <div class="col-md-4 faculty-profile {{tags}}">
-                           <div class="box">
-                               <a href="example.html?id={{id}}" > 
+                        <a href="example.html?id={{id}}" >
+                            <div class="col-md-4 faculty-profile {{tags}}">
+                               <div class="box">
                                     <img src="../../../images/backgrounds/2.jpg" width="150px"> 
                                     <div class="details">
                                         <h3>{{ name}} {{ title }}</h3>
                                         <p><span class="role"></spanclass>{{ role }}</span><br> {{ department}}</p>
                                     </div>
-                                </a>
+                                </div>
                            </div>
-                       </div>
+                        </a>
                         {{/each}}
                     </script>
                     <div id="content"></div>      
@@ -88,7 +88,6 @@
     <script src="../../../js/w3data.js"></script>
     <script src="../../../js/custom.js">//make sure this script always comes last
     </script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script>
 
             $('.btn-filter').on('click', function () {

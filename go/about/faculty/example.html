@@ -12,9 +12,12 @@
 </head>
 <body>
 	<div class="" id="cover"></div>
-	<div></div>
+	<div w3-include-html="../../../partials/mainSideNav.html"></div>
+    
 	<div id="main">
-		<div></div><!---This is the picture you see in the header==--><a href="/"><img class="bs-header-img" src="../../../images/band.png"></a>
+		<div w3-include-html="../../../partials/mainMenu.html"></div> 
+        <!---This is the picture you see in the header==-->
+        <a href="/"><img class="bs-header-img" src="../../../images/band.png"></a>
 		<div class="bs-header">
 			<div class="header-container">
 				<a href="/"><img class="main-logo" src="../../../images/howard_logo.png"></a>
@@ -24,14 +27,13 @@
 		</div>
 		<div class="page-section white">
 			<div class="container-fluid">
+                <script id="template" type="x-tmpl-mustache">
 				<div class="row">
+                    
 					<div class="col-md-9">
-						<script id="template" type="x-tmpl-mustache">
-                              <h2>{{name}} {{title}}</h2>
-                              <h6>{{role}} <br>{{department}}</h6>
-                              <p>{{phone}}</p>
-                              <p>{{email}}</p>
-                              <strong>Office hours:</strong>{{office_hours}}
+                              
+                              <strong><p>Biography</p></strong>
+                              <p>{{biography}}</p>
 
                               <strong><p>Areas of expertise</p></strong>
                               {{#areas_of_expertise}}
@@ -60,16 +62,22 @@
                                   <li>{{.}}</li>
                                </ul>
                               {{/selected_research}}
-						</script>
-						<div id="target"></div>
 					</div>
-					<div class="col-md-3">
-						<div class="spotlight"><img class="img-responsive" src="../../../images/harvey.jpg"></div>
+                    <div class="col-md-3">
+						<div ><img class="img-responsive" src="../../../images/harvey.jpg"></div>
+                              <h2>{{name}} {{title}}</h2>
+                              <h6>{{role}} <br>{{department}}</h6>
+                              <p>{{phone}}</p>
+                              <p>{{email}}</p>
+                              <strong>Office hours:</strong>{{office_hours}}
 					</div>
+					</script>
+                <div id="target"></div>
 				</div>
 			</div>
 		</div><!---page section==-->
 	</div><!---main==-->
+    <div w3-include-html="../../../partials/footer.html"></div>    
 	<div></div>
 	<script src="../../../js/jquery.min.js">
 	</script> 
