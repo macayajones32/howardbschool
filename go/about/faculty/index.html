@@ -22,7 +22,10 @@
       <div class="header-container">
         <a href="/"><img src="../../../images/howard_logo.png" class="main-logo"></a>
         <h1>Faculty</h1>
-        <p>This is information about our accounting program</p>
+        <ol class="breadcrumb">
+              <li><a href="../../../">Home</a></li>
+              <li class="active">Faculty</li>
+            </ol>
       </div>
     </div>
     
@@ -33,29 +36,25 @@
                 <div class="col-md-3">
                      <input class="faculty-search" id="system-search" placeholder="Search..." />
                     
-                    <div class="btn-group-vertical" role="group" aria-label="...">
-                        <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('')" autofocus>All</button>
-                        <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('Administration')">Administration</button>
-                        <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('Chair')">Chairs</button>
-                         <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('Accounting')">Accounting</button>
-                         <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('Finance')">Finance & International Business</button>
-                         <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('Information Systems')">Information Systems & Supply Chain Management</button>
-                         <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('management')">Management </button>
-                         <button class="btn btn-profile btn-block hvr-border-fade" onclick="find('marketing')">Marketing </button>
-                    </div>
-                    
-                    
-                   
-                    
+                    <div class="btn-group-vertical filter-button-group" role="group" aria-label="...">
+                        <button class="btn btn-profile btn-block hvr-border-fade" data-filter="*" autofocus>All</button>
+                        <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".administration">Administration</button>
+                        <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".chair">Chairs</button>
+                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".accounting">Accounting</button>
+                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".finance">Finance & International Business</button>
+                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".infosys">Information Systems & Supply Chain Management</button>
+                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".management">Management </button>
+                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".makerting">Marketing </button>
+                    </div>                  
                 </div>
                 
                 <div class="col-md-9" id="faculty-list">
                     <script id="entry-template" type="text/x-handlebars-template">
                         {{#each people}}
-                        <a href="example.html?id={{id}}" >
+                        <a href="profile.html?id={{id}}" >
                             <div class="col-md-4 faculty-profile {{tags}}">
                                <div class="box">
-                                    <img src="../../../images/backgrounds/2.jpg" width="150px"> 
+                                    <img src="images/profiles/{{id}}.jpg" width="150px"> 
                                     <div class="details">
                                         <h3>{{ name}} {{ title }}</h3>
                                         <p><span class="role"></spanclass>{{ role }}</span><br> {{ department}}</p>
@@ -84,28 +83,28 @@
     </script> 
     <script src="../../../js/handlebars.js">
     </script> 
-    <script src="mustache.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/isotope.js"></script>
     <script src="../../../js/w3data.js"></script>
     <script src="../../../js/custom.js">//make sure this script always comes last
     </script>
-    <script>
-
-            $('.btn-filter').on('click', function () {
-              var $target = $(this).data('target');
-              console.log($target)
-              if ($target != 'all') {
-                $('.faculty-profile').css('display', 'none');
-                $('.faculty-profile[data-status="' + $target + '"]').fadeIn('slow');
-              } else {
-                $('.faculty-profile').css('display', 'none').fadeIn('slow');
-              }
-            });
-              
+    <script>              
             $.getJSON('fdata.json', {}, function(context, textStatus, jqXHr) {
 	               var source   = $("#entry-template").html();
                    var template = Handlebars.compile(source);
                    var content    = template(context);
                    $('#content').html(content);
+                
+                   var $grid = $('#content').isotope({
+                      // options
+                      itemSelector: '.faculty-profile',
+                      layoutMode: 'fitRows'
+                    });
+                    // filter items on button click
+                    $('.filter-button-group').on( 'click', 'button', function() {
+                      var filterValue = $(this).attr('data-filter');
+                      $grid.isotope({ filter: filterValue });
+                    });
 	           });
               
             

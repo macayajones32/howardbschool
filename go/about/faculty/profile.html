@@ -9,6 +9,9 @@
 	<link href="../../../css/all-stylesheets.css" rel="stylesheet" type="text/css">
 	<link href="../../../css/menu.css" rel="stylesheet" type="text/css">
 	<link href="../../../css/sections.css" rel="stylesheet" type="text/css">
+    <style>
+        
+    </style>
 </head>
 <body>
 	<div class="" id="cover"></div>
@@ -29,51 +32,70 @@
 			<div class="container-fluid">
                 <script id="template" type="x-tmpl-mustache">
 				<div class="row">
-                    
-					<div class="col-md-9">
+                    <div class="col-md-3" >
+						      <img class="img-responsive" src="images/profiles/{{id}}.jpg">
+                              <br>
+                              <p>{{phone}}</p>
+                              <p>{{email}}</p>
+                              <strong>Office hours: </strong>{{office_hours}}
+					</div>
+					<div class="col-md-6">
+                              <h2>{{name}} {{title}}</h2>
+                              <p>{{role}} <br>{{department}}</p>
                               
-                              <strong><p>Biography</p></strong>
-                              <p>{{biography}}</p>
-
+                              <hr> 
+                              
+                              <strong><p >Biography</p></strong>
+                              <div class="comment">{{{biography}}}</div>
+ 
+                              <hr> 
                               <strong><p>Areas of expertise</p></strong>
                               {{#areas_of_expertise}}
                                <ul>
                                   <li>{{.}}</li>
                                </ul>
                               {{/areas_of_expertise}}
-
+                              {{^areas_of_expertise}}
+                                Coming Soon
+                              {{/areas_of_expertise}}
+                              
+                              <hr> 
                               <strong><p>Education</p></strong>
                               {{#education}}
                                <ul>
                                   <li>{{.}}</li>
                                </ul>
                               {{/education}}
-
-                              <strong><p>Courses Taught</p></strong>
-                              {{#courses_taught}}
+                              {{^education}}
+                                Coming Soon...
+                              {{/education}}
+                              
+                              <hr>                              
+                              <strong><p>Courses Taught</p></strong> 
+                              {{#courses_taught}}                             
                                <ul>
                                   <li>{{.}}</li>
                                </ul>
                               {{/courses_taught}}
+                              {{^courses_taught}}
+                                No Courses
+                              {{/courses_taught}}
 
-                              <strong><p>Selected Research</p></strong>
-                              {{#selected_research}}
+                              <hr>                               
+                              <strong><p>Selected Research</p></strong> 
+                              {{#selected_research}}                             
                                <ul>
                                   <li>{{.}}</li>
                                </ul>
                               {{/selected_research}}
+                              {{^selected_research}}
+                                No research
+                              {{/selected_research}}
 					</div>
-                    <div class="col-md-3">
-						<div ><img class="img-responsive" src="../../../images/harvey.jpg"></div>
-                              <h2>{{name}} {{title}}</h2>
-                              <h6>{{role}} <br>{{department}}</h6>
-                              <p>{{phone}}</p>
-                              <p>{{email}}</p>
-                              <strong>Office hours:</strong>{{office_hours}}
-					</div>
+                    
 					</script>
-                <div id="target"></div>
-				</div>
+                <div id="content"></div>
+                
 			</div>
 		</div><!---page section==-->
 	</div><!---main==-->
@@ -87,9 +109,10 @@
 	</script> 
 	<script src="../../../js/w3data.js">
 	</script>  
-	<script src="mustache.js">
+	<script src="js/mustache.js">
 	</script> 
 	<script>
+         $(document).ready(function(){ 
 	       /*
 	       http://www.example.com/index.php?id=1&image=awesome.jpg
 	       Calling getQueryVariable("id") - would return "1".
@@ -121,8 +144,14 @@
 	               person = getQueryVariable('id') //find person in url
 	               data = find_by_id(channelData['people'], person) //retrieve information for that person
 	               var rendered = Mustache.render(template, data); //redner the data
-	               $('#target').html(rendered);
+	               $('#content').html(rendered);
+                   
+                   $(".comment").shorten({"showChars" : 500});
 	           });
+             
+                
+            });
+        
 	</script>
     <script src="../../../js/custom.js">
 	//make sure this script always comes last
