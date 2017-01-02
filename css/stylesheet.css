@@ -195,6 +195,9 @@ body {
     color: white;
 }
 
+.parallax .fluff{
+    height: 1000px;
+}
 
 .scrollup {
     width: 40px;

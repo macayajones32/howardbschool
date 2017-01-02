@@ -86,6 +86,21 @@
     z-index: 2;
 }
 
+/*********card********/
+.card{
+    padding: 50px;
+    opacity: .95;
+    color: #003a63;
+}
+
+.card h1{
+    font-size:40px;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 22px;
+    line-height: 25px;   
+}
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -106,6 +121,16 @@
     padding: 2px 16px;
 }
 
+.card.bic{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+}
+
+.abs{
+    position: relative;
+}
 /*********Styling for our grid box ********/
 .hu-grid .box{
     width: 33.333%;
@@ -210,16 +235,16 @@ hu-grid .box{
 /*****footer ********/
 
 .footer-section{
-    padding: 100px;
+    padding: 75px;
     background: #001E32;
     color: ##001E32;
+    width: 100%;
 } 
 
 /*001E32 */
 .footer-section ul {
     list-style-type: none; 
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-     
 }
 
 .footer-section a{
@@ -232,18 +257,9 @@ hu-grid .box{
   background: #none;
   color: #ffffff;
   text-decoration: none; 
-  -webkit-transition-timing-function: ease-out;
 }
 
-.footer-section .arrow a{
-    margin: -5px;
-}
 
-.footer-section .arrow a:before{
-   
-    font-family: FontAwesome;
-    padding: 5px;
-}
 
 .footer-section h2{
     font-size: 20px; 
@@ -254,14 +270,6 @@ hu-grid .box{
   
 }  
 
-div.vertical-line{
-  width: 1px; /* Line width */
-  background-color: black; /* Line color */
-  height: 100%; /* Override in-line if you want specific height. */
-  float: left; /* Causes the line to float to left of content. 
-    You can instead use position:absolute or display:inline-block
-    if this fits better with your design */
-} 
 
 address{
      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -274,7 +282,13 @@ address{
     color: #001E32;
 }
 
+.article-section h1{
+    font-size: 25px;
+}
 
+.article-section img{
+    height: 200px;
+}
 
 .article-section .date{
     font-size: 14px;
@@ -871,26 +885,6 @@ fieldset[disabled] .btn-link:focus {
 }
 
 
-
-
-/*********card********/
-.card{
-    padding: 50px;
-    opacity: .95;
-    color: #003a63;
-}
-
-
-
-.card h1{
-    font-size:40px;
-    margin-bottom: 20px;
-}
-.card p{
-    font-size: 22px;
-    line-height: 25px;
-    
-}
 /*********quote********/
 .quote img{
     border-radius: 50%;

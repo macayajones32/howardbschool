@@ -62,16 +62,6 @@ $('.accordion_arrow').on('hidden.bs.collapse',toggleChevron1);$('.accordion_arro
             }
         });
 
-         function show(e){
-            var items = document.getElementsByClassName("major");  
-            for (var i=0; i<items.length; i++) {
-                if (items[i] == e) {
-                    e.style.display = 'block';
-                } else {
-                    items[i].style.display = 'none';
-                }
-            }
-        }
 
 
         //Call menus!

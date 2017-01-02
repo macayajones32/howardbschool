@@ -483,6 +483,19 @@ ul.nav.sub-nav a{
     padding-left: 10px;
 }
 
+.social-links{
+    padding: 40px;
+}
+
+.social-links a{
+    color: #abc9ed;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.social-links a:hover{
+    color: #fff;
+}
 /*-------- search nav --------*/
 .sub-nav{
     padding: 20px;
