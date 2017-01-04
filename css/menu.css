@@ -549,12 +549,14 @@ ul.nav.sub-nav a{
     padding: 5px;
 }
 
-
-.media .image{
-    width: 20%;
-}
 .media .headline{
-    width: 80%;
+    padding: 5px;
+}
+
+.media .headline i{
+    color: #fff;
+    padding: 10px;
+    float: left;
 }
 
 .media li a img{

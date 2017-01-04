@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 /*----Section Styling ----*/
 .section {
@@ -235,22 +235,20 @@ hu-grid .box{
 /*****footer ********/
 
 .footer-section{
-    padding: 75px;
+    padding: 75px 50px 100px 50px;
     background: #001E32;
-    color: ##001E32;
-    width: 100%;
 } 
 
 /*001E32 */
 .footer-section ul {
-    list-style-type: none; 
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    list-style-type: none;
+    text-transform: uppercase;
 }
 
 .footer-section a{
-    color: #0099cc; 
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-   
+    color: #DCDCD7;
+    font-weight: 300;
+    font-size: 15px;
 } 
 
 .footer-section a:hover, .footer-section a:focus {
@@ -262,17 +260,32 @@ hu-grid .box{
 
 
 .footer-section h2{
-    font-size: 20px; 
-    font-family: Georgia, serif;  
+    font: 800;
+    font-size: 20px;  
     font-style: normal; 
-    font-weight: 200px; 
-    color: gainsboro;
-  
+    color: #fff;
 }  
 
+.footer-section .bottom{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer-section .bottom a{
+    color: #fff;
+    font-size: 11px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: solid 1px #fff;
+}
+
+.footer-section .bottom a:nth-child(6){
+    color: #e51937;
+    border-right: none;
+    font-weight: bold;
+}
 
 address{
-     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: gainsboro;
 }
 
@@ -1142,7 +1155,7 @@ fieldset[disabled] .btn-link:focus {
   position: relative;
   color: inherit;
   background: #fff;
-  height: 350px;
+  height: 320px;
   cursor: pointer;
   text-align: center;
 }
