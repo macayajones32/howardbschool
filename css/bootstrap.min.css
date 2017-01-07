@@ -2269,7 +2269,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 22px; 
+  margin-bottom: 0px; 
   background-color: white;
 }
 .table > thead > tr > th,
@@ -2328,7 +2328,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #FE0000;
+  background-color: #c2c3c4;
 }
 table col[class*="col-"] {
   position: static;
