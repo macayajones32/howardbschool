@@ -5,10 +5,18 @@
     padding: 150px;
 }
 
+.section.white{
+    background: #fff;
+    color: #000;
+}
 
 .section.red {
     background: #e51937;
     color: #fff;
+}
+
+.section a{
+    font-weight: bold;
 }
 
 .section.blue{
@@ -974,20 +982,26 @@ fieldset[disabled] .btn-link:focus {
 }
 
 
-.page-section .intro {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 15px 0 20px;
-    font-family: 'Playfair Display', serif;
+.content-section{
+    color: #000;
+    padding: 100px 30px 100px 30px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
 }
 
-.page-section .header{
+
+.page-section .intro, .content-section .intro {
+    font-size: 22px;
+    padding: 15px 0 20px;
+}
+
+.page-section .header, .content-section .header{
     font-weight: 500;
     font-size: 18px;
     padding: 25px 0 10px;
 }
 
-.page-section p{
+.page-section p, .content-section p{
     color: #404040;
     font-size: 16px;
     line-height: 1.5em;
@@ -1342,26 +1356,92 @@ figure.effect-apollo:hover p {
 }
 /*******condensing paragraphs*****/
 .morecontent span {
-            display: none;
-        }
-        a.morelink:hover {
-            
-            color: #0254EB;
-        }
-        .morelink:visited .morelink:focus {
-            color: #0254EB!important;
-            text-decoration: none;
-        }
+    display: none;
+}
+a.morelink:hover {
+
+    color: #0254EB;
+}
+.morelink:visited .morelink:focus {
+    color: #0254EB!important;
+    text-decoration: none;
+}
 /*******breadcrumps*****/
  .breadcrumb{
-            background: none;
-            margin-left: 50px;
-            border: solid 1px #fff;
-            width: 300px;
-        }
-        
-        .breadcrumb a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    background: none;
+    margin-left: 50px;
+}
+
+.breadcrumb a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/********parallax**********/
+.parallax-content {
+    padding: 300px 100px 50px 100px;
+    position: relative;
+}
+
+.parallax-content h1{
+    font-size: 5.625rem;
+    font-weight: 800;
+}
+.parallax-content p{
+
+}
+
+.identity-stripe .logo-tab{
+    width: 23.125%;
+    min-height: 1px;
+    margin-right: 0;
+    position: absolute;
+    padding: 30px 30px 30px 30px;
+    background: #001E32;
+}
+
+.logo-tab img{
+    width:100%;
+}
+
+.top-bar{
+    background: #001E32;
+    height: 15px;
+}
+
+.content-section{
+    padding: 75px;
+}
+
+.column-title{
+    font-weight: 800;
+    border-left: solid 3px #fff;
+    padding: 0px 0px 0px 20px;
+    margin: 50px 0px 30px;
+}
+
+.arrow ul{
+    list-style-type: none;
+}
+
+.arrow li{
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    border: none;
+    padding: 0;
+}
+
+.arrow li:before {    
+    font-family: 'FontAwesome';
+    content: '\f0da';
+    margin:0 10px 0px -18px;
+    }
+
+.arrow li > a{
+    color: #abc9ed;
+}
+
+.arrow li > a:hover,.arrow li > a:focus{
+    text-decoration: none;
+}

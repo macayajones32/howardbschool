@@ -275,7 +275,7 @@ ul.nav.sub-nav a{
     font-weight: 800;
     transition: .1s; 
     font-weight: 100px;
-    background: #003a63;
+    background: #f2f2f2;
 }
 
 
@@ -287,11 +287,12 @@ ul.nav.sub-nav a{
 
 /* all links */
 .bs-docs-sidebar .nav>li>a {
-    color: #fff;
-    padding: 4px 10px;
-    font-size: 17px;
-    font-weight: 400;
+    color: #000;
+    padding: 6px 10px 5px 0px;
+    font-size: 16px;
+    font-weight: 800;
     transition-duration: .5s;
+    border-bottom: solid 1px #bfbfbf;
 }
 
 .bs-docs-sidebar .cat a {
@@ -300,11 +301,12 @@ ul.nav.sub-nav a{
 
 /* nested links */
 .bs-docs-sidebar .nav .nav>li>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 14px;
-    color: #abc9ed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #4d4d4d;
 }
 
 /* all links */
@@ -316,7 +318,7 @@ ul.nav.sub-nav a{
 .bs-docs-sidebar .nav>.active>a, 
 .bs-docs-sidebar .nav>li>a:hover, 
 .bs-docs-sidebar .nav>li>a:focus {                 
-    background: #005999;
+    background: #e6e6e6;
     padding-left: 15px;
 }
 
@@ -336,7 +338,7 @@ ul.nav.sub-nav a{
 
 .bs-docs-sidebar .nav .nav>li>a:hover {
     /*add trasnparent border */
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 @media (max-width: 600px){

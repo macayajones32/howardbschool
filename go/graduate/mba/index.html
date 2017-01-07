@@ -9,56 +9,52 @@
     <link href="../../../css/all-stylesheets.css" rel="stylesheet" type="text/css">
     <link href="../../../css/menu.css" rel="stylesheet" type="text/css">
     <link href="../../../css/sections.css" rel="stylesheet" type="text/css">
+    <style>
+        #mba_parallax_box{
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(images/dc2.JPG) no-repeat center center fixed;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            color: white;
+	       height: 750px;
+        }    
+        
+        
+    </style>
 </head>
 <body>
-    <div class="" id="cover"></div>
+
     <div w3-include-html="../../../partials/mainSideNav.html"></div> 
-    <div id="main">
     <div w3-include-html="../../../partials/mainMenu.html"></div> 
-        
-    <!---This is the picture you see in the header---->    
-    <a href="/"><img src="../../../images/ny.jpg" class="bs-header-img"></a>
-    <div class="bs-header" >
-      <div class="header-container">
-        <a href="/"><img src="../../../images/howard_logo.png" class="main-logo"></a>
-        <h1>MBA</h1>
-        <p>This is how you can get admitted to our school</p>
+               
+    <div class="identity-stripe" role="banner">
+      <div class="force">
+        <div class="top-bar"></div>
+        <a class="logo-tab column" href="#" title="Home"><img src="../../../images/howard_logo.png" alt="Howard University School of Business"></a>
       </div>
     </div>
     
-  
-    <div class="page-section white">
-        <div class="container-fluid">
+     <div id="mba_parallax_box">
+        <div class="parallax-content">
+            <div class="col-md-6">
+                <h1>The Howard MBA</h1>
+                <p>Our MBA program develops world leaders who go on to create innovative solutions for major business and societal problems. At Howard, students gain the academic and professional foundation they need to make a first class contribution to the business community.</p>
+            </div>
+            
+        </div> <!--.story-->
+    </div> <!--#third-->
+
+
+    
+    <div class="section content-section">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3 side">
-                    
-                    <nav class="bs-docs-sidebar" >
-                        <ul class="nav nav-stacked fixed barred" >
-                            <li>
-                                <a href="#" class="cat">About</a><!---cat == category --->
-                                <ul class="nav nav-stacked">
-                                    <li><a href="#">Message from the Dean</a></li>
-                                    <li><a href="#">History</a></li>
-                                    <li><a href="#">Board of Visitors</a></li>
-                                    <li><a href="#">Noteable Alumni</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Calendar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="cat">Academics</a></li>
-                            <li><a href="#" class="cat">Research</a></li>
-                            <li><a href="#" class="cat">Other</a></li>
-                        </ul>          
-                    </nav>
-                    
-                    
+                    <div w3-include-html="mba_partial.html"></div> 
                 </div> <!--- end colmd3 ---->
                 
                 <div class="col-md-6">
-                    <h1>MBA PROGRAMS</h1>
-                    <p class="intro">The Howard University MBA Program seeks to be recognized for excellence in providing a superior global graduate business education and for graduating managers and leaders with outstanding abilities, motivation, and creativity. </p>
-                    <p class="header">MASTER OF BUSINESS ADMINISTRATION PROGRAM</p>
-                    <p>The mission of Howard University School of Business, Master of Business Administration (MBA) Program is to provide the academic and professional foundation students need to make a first class contribution to the business community.</p>
                     <p class="header">Full-Time Day MBA Program</p>
                     <p>The full-time day program offers superior management education in a dynamic and intellectually stimulating environment that prepares graduates to enter the global economy as effective leaders, planners, and managers. Graduates of the program develop a solid knowledge and analytical competence in a wide range of functional disciplines, through classroom and hands-on application.</p> 
                     <p class="header">Part-time Evening MBA Program</p>
@@ -74,22 +70,18 @@
                 <div class="col-md-3">
                     <div class="spotlight">
                         <img src="../../../images/backgrounds/2.jpg" class="img-responsive">
-                        <div class="note red">
-                            <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
+                        <div class="note light-blue">
+                            <p>This is what I got from being in the MBA program</p>
                         </div>
                     </div>
-                    <div class="note blue">
-                        <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
-                    </div>
+                        <a href="#" class="btn btn-edge blue">Apply</a>
+                        <a href="#" class="btn btn-edge blue">Stay in touch</a>
                     
-                    <div class="note light-blue">
-                        <p>Have confidence in what you have achieved. Be faithful to your passions. Trust in what you aspire to accomplish.</p>
-                    </div>
                 </div>
                 
             </div>
         </div>
-    </div><!---page section---->
+    </div>
     </div><!---main---->
     <div w3-include-html="../../../partials/footer.html"></div>    
     
@@ -101,6 +93,13 @@
     </script> 
     <script src="../../../js/w3data.js"></script>
     <script src="../../../js/custom.js">//make sure this script always comes last
+    </script>
+        <script type="text/javascript" src="../../../js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#mba_parallax_box').parallax("50%", .75);
+    })
     </script>
 
     
