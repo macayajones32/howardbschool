@@ -34,8 +34,6 @@
         <div class="container-fluid">
             <div class="row is-table-row"> 
                 <div class="col-md-3">
-                     <input class="faculty-search" id="system-search" placeholder="Search..." />
-                    
                     <div class="btn-group-vertical filter-button-group" role="group" aria-label="...">
                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter="*" autofocus>All</button>
                         <button class="btn btn-profile btn-block hvr-border-fade" data-filter=".administration">Administration</button>
@@ -106,26 +104,7 @@
                       $grid.isotope({ filter: filterValue });
                     });
 	           });
-              
-            
-            function find(word){
-               people = document.getElementsByClassName('faculty-profile');
-               for (var i = 0; i < people.length; i++) {
-                   profile = String(people[i].innerHTML).toLowerCase();
-                   if(profile.includes(word.toLowerCase())){
-                       people[i].style.display = "block";
-                   } else{
-                       people[i].style.display = "none";
-                   }
-                } 
-            }
-            
-            $('#system-search').keyup( function() {
-                var inputText = $(this).val()
-                find(inputText);
-            });
-            
-              
+  
     </script>
 
     
