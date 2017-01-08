@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div class="page-section white">
-			<div class="container-fluid">
+			<div class="container">
                 <script id="template" type="x-tmpl-mustache">
 				<div class="row">
                     <div class="col-md-3" >
@@ -37,7 +37,6 @@
                               <br>
                               <p>{{phone}}</p>
                               <p>{{email}}</p>
-                              <strong>Office hours: </strong>{{office_hours}}
 					</div>
 					<div class="col-md-6">
                               <h2>{{name}}</h2>
@@ -47,7 +46,9 @@
                               
                               <strong><p >Biography</p></strong>
                               <div class="notcomment">{{{biography}}}</div>
- 
+                        
+                </script>
+                <script>
                               <hr> 
                               <strong><p>Areas of expertise</p></strong>
                               {{#areas_of_expertise}}
