@@ -2278,7 +2278,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 100px;
+  padding: 1000px;
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -3065,7 +3065,7 @@ fieldset[disabled] a.btn {
 }
 .btn-default {
   color: #333333;
-  background-color: #ffffff;
+  background-color: #dddddd; 
   border-color: #dddddd;
 }
 .btn-default:focus,
