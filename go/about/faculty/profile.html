@@ -15,17 +15,21 @@
 </head>
 <body>
 	<div class="" id="cover"></div>
-	<div w3-include-html="../../../partials/mainSideNav.html"></div>
+	<div class="partial" w3-include-html="../../../partials/mainSideNav.html"></div>
     
 	<div id="main">
-		<div w3-include-html="../../../partials/mainMenu.html"></div> 
+		<div class="partial" w3-include-html="../../../partials/mainMenu.html"></div> 
         <!---This is the picture you see in the header==-->
-        <a href="/"><img class="bs-header-img" src="../../../images/band.png"></a>
+        <a href="/"><img class="bs-header-img" src="images/faculty.jpg"></a>
 		<div class="bs-header">
 			<div class="header-container">
-				<a href="/"><img class="main-logo" src="../../../images/howard_logo.png"></a>
+				<a href="../../../"><img class="main-logo" src="../../../images/howard_logo.png"></a>
 				<h1>Faculty</h1>
-				<p>Barron H. Harvey Ph.D.</p>
+				<ol class="breadcrumb">
+                    <li><a href="../../../">Home</a></li>
+                    <li><a href="index.html">Faculty</a></li>
+                    <li class="active">Profile</li>
+                </ol>
 			</div>
 		</div>
 		<div class="page-section white">
@@ -100,7 +104,7 @@
 			</div>
 		</div><!---page section==-->
 	</div><!---main==-->
-    <div w3-include-html="../../../partials/footer.html"></div>    
+    <div class="partial" w3-include-html="../../../partials/footer.html"></div>    
 	<div></div>
 	<script src="../../../js/jquery.min.js">
 	</script> 

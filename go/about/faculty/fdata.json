@@ -1,19 +1,18 @@
 {
  "people": [
     {
-        "courses_taught": [],
-        "selected_research": [],
+        "education": ["Rutgers Business School, Rutgers University, Ph.D., Accounting","Kellogg School of Management, Northwestern University Master of Management, Accounting and Finance","Dartmouth College, Bachelor of Arts, English"],
+        "selected_research": ["Research Interests: Liquidity and Capital Markets, Pricing of Accounting Information, Market Anomaly, Market Efficiency, Accounting Regulation.","Explaining the On-The-Run Puzzle: Implications for Financial Reporting. Spring 2015.","Evidence on Lack of Liquidity for Small Public Firms, Journal of Business Valuation and Economic Loss Analysis. Volume 7, Issue 1, Pages“, ISSN (Online) 1932-9156, DOI: 10.1515/1932-9156.1111, June 2012"],
         "room": "Room 334",
         "email": "anthony.anderson@howard.edu",
-        "areas_of_expertise": [],
+        "areas_of_expertise": ["Tax accounting","Accounting", "Audit"],
         "phone": "202-806-1587",
         "role": "Associate Professor",
-
         "department": "Accounting",
         "tags":"accounting",
-        "education": [],
+        "courses_taught": ["Financial Accounting (Graduate) GACC 500","Management Accounting (Graduate) GACC 501","Accounting for Executives XACC500"],
         "id": "aanderson",
-        "biography": "",
+        "biography": "Dr. Anderson specializes in liquidity and capital markets, market anomalies and market efficiency. Dr. Anderson earned his Ph.D. from Rutgers University in 2013. Between 2007 and 2013 he was an Instructor at Rutgers University. Between 1989 and 2007 he worked in the profession as a bond trader for Bear Stearns and Company, Millennium Securities Brokerage and Hapoalim Securities.",
         "name": "Anthony Anderson Ph.D."
     },
     {

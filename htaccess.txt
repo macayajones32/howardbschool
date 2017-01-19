@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^bschool.howard.edu/[nc]
+RewriteRule ^(.*)$ http://www.bschool.howard.edu//$1 [r=301,nc]
+
+//Custom 404 errors
+ErrorDocument 404 /404.html

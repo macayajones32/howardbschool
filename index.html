@@ -14,14 +14,13 @@
 </head>
 <body>
     
-    <div w3-include-html="partials/mainSideNav.html"></div> 
+    <div class="partial" w3-include-html="partials/mainSideNav.html"></div> 
     <div id="main">
-        <div w3-include-html="partials/mainMenu.html"></div> 
-        
+        <div class="partial" w3-include-html="partials/mainMenu.html"></div> 
         <div class="hero-section">
             <div class="no-hero-vid"></div>
             <div class="hero-media">
-                <video autoplay="autoplay" class="video-background" loop="" poster="images/slider1.jpg" preload=""><source src="video/howarddemo.mp4" type="video/mp4"> </video>
+                <video autoplay="autoplay" class="video-background" loop="" poster="images/slider1.jpg" preload=""><source src="http://res.cloudinary.com/durryikj6/video/upload/v1484412892/howarddemo_s7ontn.mp4" type="video/mp4"> </video>
             </div>
             <div class="hero-overlay"></div>
             <div class="introduction text-center" style="margin-top: -185.5px;">
@@ -30,12 +29,11 @@
                 </div>
             </div>
             <div class="learn-more smoothscroll">
-                <a href="#home"><img alt="See more" src="assets/arrow-down.svg"></a>
+               <a href="#home"><div class="mouse-icon"><div class="wheel"></div></div></a>
             </div>
         </div>
         
         
-
         <div class="section white" id="home">
             <div class="container-fluid">
                     
@@ -92,7 +90,6 @@
                             </p>
 						</figcaption>			
 					</figure>
-
                </div>
             </div>
         </div>    
@@ -156,17 +153,8 @@
                         <p class="text-center">Howard University's School of Business has been a model for higher education since its founding in 1970.</p>
                     </div>       
                 </div>
-                    
-                
-                    
             </div>
         </div>
-        
-
-        
-        
-   
-        
 
         <div class="section parallax abs fluff" style="background-image: url(images/students_in_suits.jpg);">
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -192,101 +180,34 @@
                 </div>
             </div>
         </div>
-        
-        <!----
-             <section class="section blue">
-            <div class="container">
-                <div class="col-md-12">
-                            <h3>Upcoming Events</h3>
-                            <ul class="events-list events-list-compact">
-                                <li>
-                                    <div class="event-date">
-                                        <div class="event-month">Jun</div>
-                                        <div class="event-day">11</div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
-                                    <a href="#"><strong>International Immigration Seminar</strong></a>
-                                    <span class="meta-data">Saturday, 10:00 AM</span>
-                                </li>
-                                <li>
-                                    <div class="event-date">
-                                        <div class="event-month">Jun</div>
-                                        <div class="event-day">18</div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
-                                    <a href="#"><strong>Cyber Crime Seminar</strong></a>
-                                    <span class="meta-data">Saturday, 12:00 PM</span>
-                                </li>
-                                <li>
-                                    <div class="event-date">
-                                        <div class="event-month">Jul</div>
-                                        <div class="event-day">01</div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
-                                    <a href="#"><strong>Financial Investigations and Enforcement Trends Seminar</strong></a>
-                                    <span class="meta-data">Friday, 01:00 PM</span>
-                                </li>
-                                <li>
-                                    <div class="event-date">
-                                        <div class="event-month">Jul</div>
-                                        <div class="event-day">01</div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary btn-sm hidden-sm">Event Details</a>
-                                    <a href="#"><strong>An Introduction to Angel Investing</strong></a>
-                                    <span class="meta-data">Friday, 04:00 PM</span>
-                                </li>
-                            </ul>
-                        </div>
-            </div>
-        </section>
-        --->
               
-        <div class="article-section ">
+        <div class="article-section" id="news">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                            <img src="go/inside/news/images/greer_roberts.jpg" class="img-responsive">
-                            <h1><span class="date">December 2, 2016</span><br>
-                                Greer Roberts First Howard University Schwarzman Scholarship Recipient
-                            </h1>
-                            <p>
-                                Students and faculty choose the Howard University School of Business because it provides in-depth classroom instruction, real-world experience, expert speakers from a range of
-                backgrounds, access to global industry leaders and a commitment to research and publication.
-                            </p>
-                            <a href="#" class="btn btn-edge">Read More...</a>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 story">
                             <img src="go/inside/news/images/eli_lilly.png" class="img-responsive">
                             <h1><span class="date">December 1, 2016</span><br>
-                                Eli Lilly Introduces Scholars Program for Howard University’s Business Students
+                                <a href="http://newsroom.howard.edu/newsroom/article/6821/lilly-introduces-scholars-programs-howard-university-s-business-students">Eli Lilly Introduces Scholars Program for Howard University’s Business Students</a>
                             </h1>
-                            <p>
-                                Students and faculty choose the Howard University School of Business because it provides in-depth classroom instruction, real-world experience, expert speakers from a range of
-                backgrounds, access to global industry leaders and a commitment to research and publication.
-                            </p>
-                            <a href="#" class="btn btn-edge">Read More...</a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 story" >
+                            <img src="go/inside/news/images/greer_roberts.jpg" class="img-responsive">
+                            <h1><span class="date">December 2, 2016</span><br>
+                                <a href="http://newsroom.howard.edu/newsroom/article/6826/greer-roberts-first-howard-university-schwarzman-scholarship-recipient">Greer Roberts First Howard University Schwarzman Scholarship Recipient</a>
+                            </h1>
+                    </div>
+                    <div class="col-md-4 story">
                             <img src="go/inside/news/images/gtmba.jpg" class="img-responsive">
                             <h1><span class="date">December 15, 2016</span><br>
-                                Howard wraps up GTMBA US conference.
+                                <a href="go/graduate/mba/gtmba.html">Howard School of Business wraps up GTMBA US conference.</a>
                             </h1>
-                            <p>
-                                Students and faculty choose the Howard University School of Business because it provides in-depth classroom instruction, real-world experience, expert speakers from a range of
-                backgrounds, access to global industry leaders and a commitment to research and publication.
-                            </p>
-                            <a href="#" class="btn btn-edge ">Read More...</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-    <div w3-include-html="partials/footer.html"></div>    
-    
- 
-    </div><!-- / main -->
 
+    </div><!-- / main -->
+    <div class="partial" w3-include-html="partials/footer.html"></div>
     <script src="js/jquery.min.js">
     </script> 
     <script src="js/bootstrap.min.js">
@@ -298,7 +219,9 @@
     </script>
     <script src="js/wheel-nav-settings.js">
     </script> 
-    
+    <script>
+        $('a').smoothScroll();
+    </script>
 
 </body>
 </html>

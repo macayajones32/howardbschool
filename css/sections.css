@@ -92,6 +92,7 @@
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
+    cursor: alias;
 }
 
 /*********card********/
@@ -323,6 +324,13 @@ address{
     color: #404040;
 } 
 
+.article{
+    padding: 30px;
+}
+
+.article-section .story{
+    padding: 30px;
+}
 
 
 @media (max-width: 1000px){
@@ -1297,6 +1305,18 @@ figure.effect-apollo:hover p {
     padding: 10px 10px 10px 20px;
     font-size: 18px;
 }
+
+.story{
+    padding: 5px 0px 20px;
+}
+
+.story h2{
+    font-family: 'Playfair Display', serif;
+}
+
+.story a:hover,.story a:focus{
+    text-decoration: none;
+}
 /*******condensing paragraphs*****/
 .morecontent span {
     display: none;
@@ -1411,3 +1431,4 @@ a.morelink:hover {
 .arrow li > a:hover,.arrow li > a:focus{
     text-decoration: none;
 }
+
