@@ -896,27 +896,35 @@
             "name": "Yuvay Meyers Ferguson, Ph.D."
         },
         {
-            "bio": "sdsdsdas",
+            "bio": "Dr. Mayse joined the faculty at Howard University in the Fall 2015. His research focuses on the judgment and decision making of auditors and financial statement users concerning audit standard setting and regulation. His research appears in the Journal of Business and Economic Perspectives, Journal of Leadership, Accountability and Ethics, and the Journal of Finance and Accountancy. Dr. Mayse teaches Cost Accounting and Accounting Principles II. He is currently the Accounting Principles I and II Coordinator. Dr. Mayse is a CPA. He is a member of the American Accounting Association (AAA), the American Institute of CPAs (AICPA), the PhD Project, and the National Association of Black Accountants (NABA).",
             "courses_taught": [
-                ""
+                "Accounting Principles II",
+                "Cost Accounting"
             ],
             "selected_research": [
-                ""
+                "Mayse, A. L., Daniels, B. W., & Ellis, Y. 2016. Perceptions of independence and auditor rotation: An examination of nonprofit organizations. Journal of Finance and Accountancy, 20.",
+                "Mayse, A. L. & Daniels, B. 2015. The effects of corporate governance and auditor rotation on CEO/CFOs\u2019 perceptions of auditor Independence and financial statement reliability: Evidence from nonprofit organizations. Journal of Leadership, Accountability, and Ethics, 12 (4): 82-92.",
+                "Mayse, A. L., Booker, Q., & Hill, C. Spring/Summer 2015. An examination of audit partner and audit firm rotation policies for private companies: CPAs\u2019 perceptions, Journal of Business and Economic Perspectives, 41 (2): 73-90."
             ],
-            "name": "sdfsd",
-            "tags": "student non",
-            "id": "skakpovi",
+            "name": "Adrian L. Mayse Ph.D., CPA",
+            "tags": "",
+            "id": "amayse",
             "areas_of_expertise": [
-                ""
+                "Audit rotation",
+                "Auditor Independence",
+                "Audit Quality",
+                "Judgement and Decision Making of Auditors and Financial Statement Users"
             ],
-            "phone": "122",
+            "phone": "202-806-1856",
             "role": "Assistant Professor",
-            "department": "Information Systems & Supply Chain Management",
+            "department": "Accounting",
             "education": [
-                ""
+                "Ph.D., Accounting, Jackson State University, Jackson, Mississippi, 2014",
+                "M.P.A., Accounting, Jackson State University, Jackson, Mississippi, 2007",
+                "B.B.A., Finance, University of Mississippi, University, Mississippi, 2005"
             ],
-            "email": "skakpovi@gmail.com",
-            "room": "12"
+            "email": "adrian.mayse@howard.edu",
+            "room": ""
         }
     ]
 }
