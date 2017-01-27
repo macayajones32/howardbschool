@@ -1432,3 +1432,32 @@ a.morelink:hover {
     text-decoration: none;
 }
 
+
+
+/*********publications ************/
+.publication{
+    margin-bottom: 30px;
+}
+
+.publication a{
+    color: #001E32;
+}
+
+.publication a:hover, .publication a:focus{
+    text-decoration: none;
+}
+
+.publication img{
+    height: 380px
+}
+
+/***** member ******/
+.member{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+.member p{
+    font-size: 12px;
+    margin: 2px;
+}
