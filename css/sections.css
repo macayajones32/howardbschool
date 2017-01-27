@@ -1087,7 +1087,7 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .note.red:before{
-  border-color: #eb4760 transparent;
+  border-color: #eb4760 #fff;
 }
 
 .note.blue{
@@ -1104,6 +1104,19 @@ fieldset[disabled] .btn-link:focus {
 
 .note.light-blue:before{
   border-color: #003a63 #fff;
+}
+
+.note a:hover,.note a:focus{
+    text-decoration: none;
+}
+
+.note a{
+    font-style: italic;
+}
+
+.speaker{
+    font-style: italic;
+    line-height: 1.7em;
 }
 /********************/
 
