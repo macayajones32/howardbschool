@@ -1474,3 +1474,50 @@ a.morelink:hover {
     font-size: 12px;
     margin: 2px;
 }
+/***** hover-row *****/
+.hover-box{
+    background: #fff;
+    margin: 0;
+}
+
+
+.hover-box > div:nth-of-type(even) {
+    background: #eaf1fb;
+}
+
+.hover-box .h-row{
+    background: #fff;
+    transition-duration: .5s;
+    padding: 40px 10px 40px; 10px;
+}
+
+.hover-box .h-title{
+    background: #003a63;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.hover-box .h-row:hover{
+    background: #abc9ed;
+}
+
+.hover-box .h-row .h-left{
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.hover-box .h-row .h-right p{
+    font-size: 15px;
+    font-weight: 100px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.page-section.no-padding{
+    padding: 0px!important;
+}
+
+.hover-box .row{
+    margin-right: 0px!important;
+}
