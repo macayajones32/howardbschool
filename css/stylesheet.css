@@ -101,7 +101,7 @@ body {
         margin: auto;
     }
     .hero-section .introduction img {
-        position: absolute;
+        position: relative;
         top: 150px;
         transform: translateY(-50%);
         margin: auto;
