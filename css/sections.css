@@ -292,7 +292,7 @@ hu-grid .box{
     border-right: solid 1px #fff;
 }
 
-.footer-section .bottom a:nth-child(6){
+.footer-section .bottom a:last-child {
     color: #e51937;
     border-right: none;
     font-weight: bold;
