@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <div class="" id="cover"></div>
+    <div onclick="closeNav()" id="cover"></div>
     <div class="partial" w3-include-html="../partials/mainSideNav.html"></div> 
     <div id="main">
     <div class="partial" w3-include-html="../partials/mainMenu.html"></div> 
@@ -36,19 +36,16 @@
                     <nav class="bs-docs-sidebar" >
                         <ul class="nav nav-stacked fixed barred" >
                             <li>
-                                <a href="#" class="cat">About</a><!---cat == category --->
+                                <h3>About</h3>
                                 <ul class="nav nav-stacked">
-                                    <li><a href="#">Message from the Dean</a></li>
-                                    <li><a href="#">History</a></li>
-                                    <li><a href="#">Board of Visitors</a></li>
-                                    <li><a href="#">Noteable Alumni</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="go/about/message_from_the_dean.html">Message from the Dean</a></li>
+                                    <li><a href="go/about/history.html">History</a></li>
+                                    <li><a href="go/about/board_of_visitors.html">Board of Visitors</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="cat">Academics</a></li>
-                            <li><a href="#" class="cat">Research</a></li>
-                            <li><a href="#" class="cat">Other</a></li>
+                            <li><a href="go/undergraduate/departments/" class="cat">Departments</a></li>
+                            <li><a href="go/undergraduate/majors/" class="cat">Majors</a></li>
+                            <li><a href="go/undergraduate/centers/" class="cat">Center</a></li>
                         </ul>          
                     </nav>
                     
@@ -58,7 +55,7 @@
                 <div class="col-md-8">
                     
                     <form action="search.html">
-                        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+                        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="type here to search...">
                         <input type="submit" value="submit" id="search">
                     </form>
                     
