@@ -1525,3 +1525,12 @@ a.morelink:hover {
 .hover-box .row{
     margin-right: 0px!important;
 }
+
+.logos{
+    position: relative;
+}
+.logos img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
