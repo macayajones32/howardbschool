@@ -141,6 +141,11 @@
         display: none;
     }
 }
+@media (max-width: 600px){
+    .fluff{
+        display: none;
+    }
+}
 .abs{
     position: relative;
 }
@@ -1533,4 +1538,16 @@ a.morelink:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     vertical-align: middle;
+}
+
+.creds{
+    margin-top: 10px;
+    background: #fff;
+    padding: 3px;
+    text-align: center;
+}
+.creds img{
+    padding: 3px;
+    background: #fff;
+    display: inline;
 }

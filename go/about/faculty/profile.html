@@ -36,7 +36,7 @@
 			<div class="container">
                 <script id="template" type="x-tmpl-mustache">
 				<div class="row">
-                    <div class="col-md-3" >
+                    <div class="col-md-3 col-md-offset-1" >
 						      <img class="img-responsive" src="images/profiles/{{id}}.jpg">
                               <br>
                               <p>{{phone}}</p>
@@ -50,52 +50,54 @@
                               
                               <strong><p >Biography</p></strong>
                               <div class="notcomment">{{{biography}}}</div>
-                        
-                </script>
-                <script>
-                              <hr> 
-                              <strong><p>Areas of expertise</p></strong>
-                              {{#areas_of_expertise}}
-                               <ul>
-                                  <li>{{.}}</li>
-                               </ul>
-                              {{/areas_of_expertise}}
-                              {{^areas_of_expertise}}
-                                Coming Soon
-                              {{/areas_of_expertise}}
-                              
-                              <hr> 
-                              <strong><p>Education</p></strong>
-                              {{#education}}
-                               <ul>
-                                  <li>{{.}}</li>
-                               </ul>
-                              {{/education}}
-                              {{^education}}
-                                Coming Soon...
-                              {{/education}}
-                              
-                              <hr>                              
-                              <strong><p>Courses Taught</p></strong> 
-                              {{#courses_taught}}                             
-                               <ul>
-                                  <li>{{.}}</li>
-                               </ul>
-                              {{/courses_taught}}
-                              {{^courses_taught}}
-                                No Courses
-                              {{/courses_taught}}
 
-                              <hr>                               
-                              <strong><p>Selected Research</p></strong> 
-                              {{#selected_research}}                             
-                               <ul>
+                              
+                              {{#areas_of_expertise.length}}
+                                <hr> 
+                                <strong><p>Areas of expertise</p></strong>
+                              {{/areas_of_expertise.length}}
+                              
+                              {{#areas_of_expertise}}
+                               <ul class="arrow">
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/areas_of_expertise}}
+                              
+                              
+                              {{#education.length}}
+                                <hr> 
+                                <strong><p>Education</p></strong>
+                              {{/education.length}}
+                              {{#education}}
+                               <ul class="arrow">
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/education}}
+                              
+                              
+                              {{#courses_taught.length}}
+                                <hr> 
+                                <strong><p>Courses Taught</p></strong> 
+                              {{/courses_taught.length}}
+                              
+                              {{#courses_taught}}                             
+                               <ul class="arrow">
+                                  <li>{{.}}</li>
+                               </ul>
+                              {{/courses_taught}}
+            
+
+                               
+                              {{#selected_research.length}} 
+                                <hr>
+                                <strong><p>Selected Research</p></strong> 
+                              {{/selected_research.length}} 
+                              {{#selected_research}}                           
+                               <ul class="arrow">
                                   <li>{{.}}</li>
                                </ul>
                               {{/selected_research}}
-                              {{^selected_research}}
-                                No research
-                              {{/selected_research}}
+             
 					</div>
                     
 					</script>
