@@ -13,7 +13,7 @@
   Whenever you start to work make sure to do a pull so you have the most update version of the code base
   
   ~~~
-  git pull
+  git clone https://github.com/kkneomis/howardbschool.git
   ~~~
  
 ##Pushing code
